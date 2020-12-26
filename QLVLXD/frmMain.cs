@@ -165,13 +165,13 @@ namespace QLVLXD
 
         private void acTonKho_Click(object sender, EventArgs e)
         {
-            //if (!container.Controls.Contains(usTonKho.Instance))
-            //{
-            //    container.Controls.Add(usTonKho.Instance);
-            //    usTonKho.Instance.Dock = DockStyle.Fill;
-            //    usTonKho.Instance.BringToFront();
-            //}
-            //usTonKho.Instance.BringToFront();
+            if (!container.Controls.Contains(usTonKho.Instance))
+            {
+                container.Controls.Add(usTonKho.Instance);
+                usTonKho.Instance.Dock = DockStyle.Fill;
+                usTonKho.Instance.BringToFront();
+            }
+            usTonKho.Instance.BringToFront();
         }
     }
 }

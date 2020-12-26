@@ -229,6 +229,12 @@
     <Compile Include="usPhanQuyen.Designer.cs">
       <DependentUpon>usPhanQuyen.cs</DependentUpon>
     </Compile>
+    <Compile Include="usTonKho.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usTonKho.Designer.cs">
+      <DependentUpon>usTonKho.cs</DependentUpon>
+    </Compile>
     <Compile Include="usVatLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -322,6 +328,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="usPhanQuyen.resx">
       <DependentUpon>usPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="usTonKho.resx">
+      <DependentUpon>usTonKho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usVatLieu.resx">
       <DependentUpon>usVatLieu.cs</DependentUpon>
