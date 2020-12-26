@@ -330,3 +330,15 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.exe
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.pdb
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyKhoHangHoa.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmChiTietKhoHangHoa.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\DevExpress.XtraScheduler.v19.2.Core.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\DevExpress.XtraScheduler.v19.2.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\DevExpress.XtraScheduler.v19.2.xml
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\DevExpress.XtraScheduler.v19.2.Core.xml
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\de\DevExpress.XtraScheduler.v19.2.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\es\DevExpress.XtraScheduler.v19.2.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ja\DevExpress.XtraScheduler.v19.2.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ru\DevExpress.XtraScheduler.v19.2.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\de\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\es\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ja\DevExpress.XtraScheduler.v19.2.Core.resources.dll
+D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ru\DevExpress.XtraScheduler.v19.2.Core.resources.dll

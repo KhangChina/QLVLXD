@@ -49,7 +49,7 @@
             this.grvPhieuNhap = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn9 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn10 = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.gridColumn11 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colSoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn12 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.grcCTHD = new DevExpress.XtraGrid.GridControl();
@@ -227,9 +227,9 @@
             // 
             this.groupControl2.Controls.Add(this.grcPhieuNhap);
             this.groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.groupControl2.Location = new System.Drawing.Point(677, 2);
+            this.groupControl2.Location = new System.Drawing.Point(684, 2);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(334, 567);
+            this.groupControl2.Size = new System.Drawing.Size(327, 567);
             this.groupControl2.TabIndex = 0;
             this.groupControl2.Text = "Phiếu Nhập Của Hóa Đơn";
             // 
@@ -240,7 +240,7 @@
             this.grcPhieuNhap.MainView = this.grvPhieuNhap;
             this.grcPhieuNhap.MenuManager = this.barManager1;
             this.grcPhieuNhap.Name = "grcPhieuNhap";
-            this.grcPhieuNhap.Size = new System.Drawing.Size(330, 542);
+            this.grcPhieuNhap.Size = new System.Drawing.Size(323, 542);
             this.grcPhieuNhap.TabIndex = 0;
             this.grcPhieuNhap.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvPhieuNhap});
@@ -250,10 +250,11 @@
             this.grvPhieuNhap.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn9,
             this.gridColumn10,
-            this.gridColumn11,
+            this.colSoLuong,
             this.gridColumn12});
             this.grvPhieuNhap.GridControl = this.grcPhieuNhap;
             this.grvPhieuNhap.Name = "grvPhieuNhap";
+            this.grvPhieuNhap.OptionsView.ShowFooter = true;
             this.grvPhieuNhap.OptionsView.ShowGroupPanel = false;
             // 
             // gridColumn9
@@ -270,12 +271,14 @@
             this.gridColumn10.Visible = true;
             this.gridColumn10.VisibleIndex = 1;
             // 
-            // gridColumn11
+            // colSoLuong
             // 
-            this.gridColumn11.FieldName = "SoLuong";
-            this.gridColumn11.Name = "gridColumn11";
-            this.gridColumn11.Visible = true;
-            this.gridColumn11.VisibleIndex = 2;
+            this.colSoLuong.FieldName = "SoLuong";
+            this.colSoLuong.Name = "colSoLuong";
+            this.colSoLuong.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
+            new DevExpress.XtraGrid.GridColumnSummaryItem(DevExpress.Data.SummaryItemType.Sum, "SoLuong", "Tổng Số VT={0:0.##}")});
+            this.colSoLuong.Visible = true;
+            this.colSoLuong.VisibleIndex = 2;
             // 
             // gridColumn12
             // 
@@ -290,7 +293,7 @@
             this.groupControl1.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.groupControl1.Location = new System.Drawing.Point(2, 2);
             this.groupControl1.Name = "groupControl1";
-            this.groupControl1.Size = new System.Drawing.Size(661, 567);
+            this.groupControl1.Size = new System.Drawing.Size(668, 567);
             this.groupControl1.TabIndex = 4;
             this.groupControl1.Text = "Chi Tiết Hóa Đơn Nhập";
             // 
@@ -305,7 +308,7 @@
             this.loopGiamGia,
             this.loopNCC,
             this.loopVatLieu});
-            this.grcCTHD.Size = new System.Drawing.Size(657, 542);
+            this.grcCTHD.Size = new System.Drawing.Size(664, 542);
             this.grcCTHD.TabIndex = 0;
             this.grcCTHD.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grvCTHD});
@@ -433,23 +436,23 @@
             this.layoutControlItem1.Control = this.groupControl1;
             this.layoutControlItem1.Location = new System.Drawing.Point(0, 0);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(665, 571);
+            this.layoutControlItem1.Size = new System.Drawing.Size(672, 571);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.groupControl2;
-            this.layoutControlItem2.Location = new System.Drawing.Point(675, 0);
+            this.layoutControlItem2.Location = new System.Drawing.Point(682, 0);
             this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(338, 571);
+            this.layoutControlItem2.Size = new System.Drawing.Size(331, 571);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
             // 
             // splitterItem1
             // 
             this.splitterItem1.AllowHotTrack = true;
-            this.splitterItem1.Location = new System.Drawing.Point(665, 0);
+            this.splitterItem1.Location = new System.Drawing.Point(672, 0);
             this.splitterItem1.Name = "splitterItem1";
             this.splitterItem1.Size = new System.Drawing.Size(10, 571);
             // 
@@ -469,6 +472,7 @@
             this.Controls.Add(this.barDockControl1);
             this.Name = "frmPhieuGiaoNhap";
             this.Text = "frmPhieuGiaoNhap";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPhieuGiaoNhap_FormClosing);
             this.Load += new System.EventHandler(this.frmPhieuGiaoNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.barManager2)).EndInit();
@@ -529,7 +533,7 @@
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn8;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn9;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn10;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn11;
+        private DevExpress.XtraGrid.Columns.GridColumn colSoLuong;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn12;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit loopGiamGia;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit loopNCC;

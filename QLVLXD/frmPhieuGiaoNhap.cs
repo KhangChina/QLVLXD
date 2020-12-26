@@ -59,9 +59,15 @@ namespace QLVLXD
                 return;
             int ID_CTHD =int.Parse(grvCTHD.GetRowCellValue(grvCTHD.FocusedRowHandle, "ID").ToString());
             int ID_HH = int.Parse(grvCTHD.GetRowCellValue(grvCTHD.FocusedRowHandle, "IDHH").ToString());
-            frmModifyPhieuGiaoNhap frm = new frmModifyPhieuGiaoNhap(ID_CTHD, ID_HH);
+            //Check SoLuong
+            int SLMax = int.Parse(grvCTHD.GetRowCellValue(grvCTHD.FocusedRowHandle, "SoLuongNhap").ToString()) - int.Parse(colSoLuong.SummaryItem.SummaryValue.ToString());
+            frmModifyPhieuGiaoNhap frm = new frmModifyPhieuGiaoNhap(ID_CTHD, ID_HH, SLMax);
             frm.ShowDialog();    
             grcPhieuNhap.DataSource = dataPhieuGiaoNhap.GetDataByIDCTHD(ID_CTHD);
+
+            CheckSL();
+
+
 
         }
 
@@ -72,12 +78,53 @@ namespace QLVLXD
                 return;
             int ID_CTHD = int.Parse(grvCTHD.GetRowCellValue(grvCTHD.FocusedRowHandle, "ID").ToString());
             grcPhieuNhap.DataSource = dataPhieuGiaoNhap.GetDataByIDCTHD(ID_CTHD);
+            CheckSL();
         }
-
+        void CheckSL()
+        {
+            //Check SoLuong
+            int SoLuongVatTuHD = int.Parse(grvCTHD.GetRowCellValue(grvCTHD.FocusedRowHandle, "SoLuongNhap").ToString());
+            if (int.Parse(colSoLuong.SummaryItem.SummaryValue.ToString()) == SoLuongVatTuHD)
+            {
+                btnTaoPhieuGiaoNhap.Enabled = false;
+            }
+            else if (int.Parse(colSoLuong.SummaryItem.SummaryValue.ToString()) > SoLuongVatTuHD)
+            {
+                XtraMessageBox.Show("Số lượng vật tư phiếu nhập sai");
+                btnTaoPhieuGiaoNhap.Enabled = false;
+            }
+            else
+            {
+                btnTaoPhieuGiaoNhap.Enabled = true;
+            }
+        }
         private void btnUpdate_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            dataHoaDonNhap.UpdateQueryDuyetNhanVien(2, IDHD);
-            this.Close();
+            //dataHoaDonNhap.UpdateQueryDuyetNhanVien(2, IDHD);
+            //this.Close();
+        }
+
+        private void frmPhieuGiaoNhap_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            DataTable dt = new DataTable(); 
+            dt = data.GetDataByIDHDNhap(IDHD);
+            int checkSL = 0;
+            foreach (DataRow item in dt.Rows)
+            {
+                DataTable dataItem = new DataTable();
+                dataItem = dataPhieuGiaoNhap.GetSumByIDChiTietHoaDonNhap(int.Parse(item["ID"].ToString()));
+
+                if (item["SoLuongNhap"].ToString() != dataItem.Rows[0]["Tong"].ToString())
+                {
+                    checkSL = 1;
+                }
+                   
+            }
+            if(checkSL == 0)
+            {
+                dataHoaDonNhap.UpdateQueryDuyetNhanVien(2, IDHD);
+                XtraMessageBox.Show("Đã Cập Nhật Trạng Thái Hóa Đơn");
+            }
         }
     }
 }

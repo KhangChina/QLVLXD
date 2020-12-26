@@ -10,11 +10,15 @@ namespace QLVLXD
         }
         int IDChiTietHoaDonNhap;
         int IDVatLieu;
-        public frmModifyPhieuGiaoNhap(int IDChiTietHoaDonNhap,int IDVatLieu)
+        int SoLuongMAX;
+        public frmModifyPhieuGiaoNhap(int IDChiTietHoaDonNhap,int IDVatLieu,int SoLuongMAX)
         {
             InitializeComponent();
             this.IDChiTietHoaDonNhap = IDChiTietHoaDonNhap;
             this.IDVatLieu = IDVatLieu;
+            this.SoLuongMAX = SoLuongMAX;
+            spSoLuong.Properties.MaxValue = SoLuongMAX;
+            spSoLuong.Properties.MinValue = 1;
         }
         dbQLVLXDTableAdapters.tblKhoTableAdapter dataKho = new dbQLVLXDTableAdapters.tblKhoTableAdapter();
         //dbQLVLXDTableAdapters.tblChiTietHoaDonNhapTableAdapter dataChiTietHoaDonNhap = new dbQLVLXDTableAdapters.tblChiTietHoaDonNhapTableAdapter();
