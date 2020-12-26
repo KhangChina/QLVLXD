@@ -24,9 +24,57 @@ namespace QLVLXD
                 return _instance;
             }
         }
+        dbQLVLXDTableAdapters.tblKho_HangHoaTableAdapter dataKho_HangHoa = new dbQLVLXDTableAdapters.tblKho_HangHoaTableAdapter();
+        dbQLVLXDTableAdapters.tblDVTTableAdapter dataDVT = new dbQLVLXDTableAdapters.tblDVTTableAdapter();
+        dbQLVLXDTableAdapters.tblHangHoaTableAdapter dataHH = new dbQLVLXDTableAdapters.tblHangHoaTableAdapter();
+        dbQLVLXDTableAdapters.tblKhoTableAdapter dataKHo = new dbQLVLXDTableAdapters.tblKhoTableAdapter();
         public usTonKho()
         {
             InitializeComponent();
+        }
+
+        private void usTonKho_Load(object sender, EventArgs e)
+        {
+            LoadData();
+        }
+        void LoadData()
+        {
+
+            loopIDDVT.DisplayMember = "TenDVT";
+            loopIDDVT.ValueMember = "ID";
+            loopIDDVT.DataSource = dataDVT.GetAll();
+            colIDDVT.ColumnEdit = loopIDDVT;
+
+            loopIDHH.DisplayMember = "TenHH";
+            loopIDHH.ValueMember = "ID";
+            loopIDHH.DataSource = dataHH.GetAll();
+            colIDHH.ColumnEdit = loopIDHH;
+
+            loopIDKho.DisplayMember = "TenKho";
+            loopIDKho.ValueMember = "ID";
+            loopIDKho.DataSource = dataKHo.GetAll();
+            colIDKho.ColumnEdit = loopIDKho;
+
+            grc.DataSource = dataKho_HangHoa.GetAllSum();
+        }
+        private void btnLamMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadData();
+        }
+
+        private void btnXemChiTietHangHoa_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (grv.FocusedRowHandle < 0)
+                return;
+            int IDHH = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "IDHH").ToString());
+            frmChiTietKhoHangHoa frm = new frmChiTietKhoHangHoa(IDHH);
+            frm.ShowDialog();
+            LoadData();
+        }
+        private void btnThemVatLieuVaoKho_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmModifyKhoHangHoa frm = new frmModifyKhoHangHoa();
+            frm.ShowDialog();
         }
     }
 }

@@ -70,6 +70,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbQLVLXD.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmModifyKhoHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyKhoHangHoa.Designer.cs">
+      <DependentUpon>frmModifyKhoHangHoa.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmChiTietPhieuDat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -111,6 +117,12 @@
     </Compile>
     <Compile Include="frmModifyKho.Designer.cs">
       <DependentUpon>frmModifyKho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChiTietKhoHangHoa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietKhoHangHoa.Designer.cs">
+      <DependentUpon>frmChiTietKhoHangHoa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModifyLoaiVatLieu.cs">
       <SubType>Form</SubType>
@@ -241,6 +253,9 @@
     <Compile Include="usVatLieu.Designer.cs">
       <DependentUpon>usVatLieu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmModifyKhoHangHoa.resx">
+      <DependentUpon>frmModifyKhoHangHoa.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietPhieuDat.resx">
       <DependentUpon>frmChiTietPhieuDat.cs</DependentUpon>
     </EmbeddedResource>
@@ -261,6 +276,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifyKho.resx">
       <DependentUpon>frmModifyKho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChiTietKhoHangHoa.resx">
+      <DependentUpon>frmChiTietKhoHangHoa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmModifyLoaiVatLieu.resx">
       <DependentUpon>frmModifyLoaiVatLieu.cs</DependentUpon>

@@ -328,3 +328,5 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.csproj.CoreCompileInputs.cache
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.csproj.CopyComplete
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.exe
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.pdb
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyKhoHangHoa.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmChiTietKhoHangHoa.resources
