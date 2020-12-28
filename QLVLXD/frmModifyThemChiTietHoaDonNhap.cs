@@ -104,7 +104,7 @@ namespace QLVLXD
         }
         double TinhTongGia()
         {
-            return (double.Parse(spSoLuong.Text) * double.Parse(txtDonGia.Text) * (double.Parse(loopGiamGia.Text) / 100));
+            return (double.Parse(spSoLuong.Text)*double.Parse(txtDonGia.Text)  - double.Parse(spSoLuong.Text) * double.Parse(txtDonGia.Text) * (double.Parse(loopGiamGia.Text) / 100));
         }
 
         private void btnThemGiamGia_Click(object sender, EventArgs e)
