@@ -72,6 +72,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dbQLVLXD.xsd</DependentUpon>
     </Compile>
+    <Compile Include="frmChiTietPhieuXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChiTietPhieuXuat.Designer.cs">
+      <DependentUpon>frmChiTietPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmModifyChiTietHoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmModifyChiTietHoaDonXuat.Designer.cs">
+      <DependentUpon>frmModifyChiTietHoaDonXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmModifyHoaDonXuat.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +279,12 @@
     <Compile Include="usVatLieu.Designer.cs">
       <DependentUpon>usVatLieu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmChiTietPhieuXuat.resx">
+      <DependentUpon>frmChiTietPhieuXuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmModifyChiTietHoaDonXuat.resx">
+      <DependentUpon>frmModifyChiTietHoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModifyHoaDonXuat.resx">
       <DependentUpon>frmModifyHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>

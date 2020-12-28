@@ -344,3 +344,5 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ja\DevExpress.XtraScheduler.v19.2.Core
 D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ru\DevExpress.XtraScheduler.v19.2.Core.resources.dll
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyHoaDonXuat.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.usBanVatLieu.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmChiTietPhieuXuat.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyChiTietHoaDonXuat.resources
