@@ -177,6 +177,12 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Session.cs" />
+    <Compile Include="usBanVatLieu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usBanVatLieu.Designer.cs">
+      <DependentUpon>usBanVatLieu.cs</DependentUpon>
+    </Compile>
     <Compile Include="usDanhMucKho.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -316,6 +322,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="usBanVatLieu.resx">
+      <DependentUpon>usBanVatLieu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usDanhMucKho.resx">
       <DependentUpon>usDanhMucKho.cs</DependentUpon>
     </EmbeddedResource>

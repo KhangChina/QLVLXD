@@ -84,6 +84,15 @@ namespace QLVLXD
             dt.Rows.Add("2", "Đã Nhập Kho");
             return dt;
         }
+        public static DataTable KhoiTaoTrangThaiXuatHoaDon()
+        {
+            dt = new DataTable();
+            dt.Columns.Add("ID");
+            dt.Columns.Add("Ten");
+            dt.Rows.Add("0", "Đang Giao");
+            dt.Rows.Add("1", "Đã Giao Xong");
+            return dt;
+        }
 
 
     }
