@@ -173,5 +173,16 @@ namespace QLVLXD
             }
             usTonKho.Instance.BringToFront();
         }
+
+        private void acBanVatLieu_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(usBanVatLieu.Instance))
+            {
+                container.Controls.Add(usBanVatLieu.Instance);
+                usBanVatLieu.Instance.Dock = DockStyle.Fill;
+                usBanVatLieu.Instance.BringToFront();
+            }
+            usBanVatLieu.Instance.BringToFront();
+        }
     }
 }

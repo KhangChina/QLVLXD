@@ -36,7 +36,7 @@
             this.acDatHangNhap = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acNhapVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement6 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acBanVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acKho = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -122,17 +122,18 @@
             // accordionControlElement2
             // 
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement6,
+            this.acBanVatLieu,
             this.accordionControlElement7});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Hóa Đơn Xuất";
             // 
-            // accordionControlElement6
+            // acBanVatLieu
             // 
-            this.accordionControlElement6.Name = "accordionControlElement6";
-            this.accordionControlElement6.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement6.Text = "Bán Vật Liệu";
+            this.acBanVatLieu.Name = "acBanVatLieu";
+            this.acBanVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acBanVatLieu.Text = "Bán Vật Liệu";
+            this.acBanVatLieu.Click += new System.EventHandler(this.acBanVatLieu_Click);
             // 
             // accordionControlElement7
             // 
@@ -331,7 +332,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement acDatHangNhap;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acNhapVatLieu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement6;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement acBanVatLieu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acKho;
