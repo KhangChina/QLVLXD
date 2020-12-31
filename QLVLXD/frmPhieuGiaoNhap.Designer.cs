@@ -152,8 +152,7 @@
             this.bar2.DockRow = 0;
             this.bar2.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnTaoPhieuGiaoNhap),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnUpdate)});
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnTaoPhieuGiaoNhap)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";

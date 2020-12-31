@@ -59,7 +59,8 @@ namespace QLVLXD
                    null,
                    DateTime.Now,
                    0,
-                   txtTenHD.Text
+                   txtTenHD.Text,
+                   0
                     );
                 this.Close();
             }

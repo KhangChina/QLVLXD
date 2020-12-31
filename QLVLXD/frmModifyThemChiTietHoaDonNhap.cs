@@ -113,5 +113,6 @@ namespace QLVLXD
             frm.ShowDialog();
             LoadData();
         }
+
     }
 }

@@ -11,19 +11,19 @@ using DevExpress.XtraEditors;
 
 namespace QLVLXD
 {
-    public partial class usBanVatLieu : DevExpress.XtraEditors.XtraUserControl
+    public partial class usXuatKho : DevExpress.XtraEditors.XtraUserControl
     {
-        private static usBanVatLieu _instance;
-        public static usBanVatLieu Instance
+        private static usXuatKho _instance;
+        public static usXuatKho Instance
         {
             get
             {
                 if (_instance == null)
-                    _instance = new usBanVatLieu();
+                    _instance = new usXuatKho();
                 return _instance;
             }
         }
-        public usBanVatLieu()
+        public usXuatKho()
         {
             InitializeComponent();
         }
@@ -32,16 +32,8 @@ namespace QLVLXD
         dbQLVLXDTableAdapters.tblKhachHangTableAdapter dataKhachHang = new dbQLVLXDTableAdapters.tblKhachHangTableAdapter();
 
         dbQLVLXDTableAdapters.tblNhanVienTableAdapter dataNhanVien = new dbQLVLXDTableAdapters.tblNhanVienTableAdapter();
-        private void btnThemHD_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void usXuatKho_Load(object sender, EventArgs e)
         {
-            frmModifyHoaDonXuat frm = new frmModifyHoaDonXuat();
-            frm.ShowDialog();
-            grc.DataSource = dataHDXuat.GetData();
-        }
-
-        private void usBanVatLieu_Load(object sender, EventArgs e)
-        {
-
 
             lookKH.DisplayMember = "TenKhachHang";
             lookKH.ValueMember = "ID";
@@ -59,27 +51,11 @@ namespace QLVLXD
             colTrangThai.ColumnEdit = lookTrangThai;
 
             grc.DataSource = dataHDXuat.GetData();
-
         }
 
-        private void btnCapNhatHoaDon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        private void btnTaoPhieuXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            if (grv.FocusedRowHandle < 0)
-                return;
-            int ID = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
-            frmModifyHoaDonXuat frm = new frmModifyHoaDonXuat(ID);
-            frm.ShowDialog();
-            grc.DataSource = dataHDXuat.GetData();
-        }
 
-        private void btnChiTietHoaDon_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
-        {
-            if (grv.FocusedRowHandle < 0)
-                return;
-            int ID = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
-            frmChiTietPhieuXuat frm = new frmChiTietPhieuXuat(ID);
-            frm.ShowDialog();
-            grc.DataSource = dataHDXuat.GetData();
         }
     }
 }

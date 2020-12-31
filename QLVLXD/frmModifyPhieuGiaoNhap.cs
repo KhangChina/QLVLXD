@@ -46,7 +46,6 @@ namespace QLVLXD
             if (ID > 0)
             {
                 //Cập nhật số lượng vào kho
-
                 dataKhoHangHoa.InsertQuery(
                 int.Parse(loopKho.EditValue.ToString()),
                 IDVatLieu,

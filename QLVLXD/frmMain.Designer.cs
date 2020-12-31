@@ -37,7 +37,7 @@
             this.acNhapVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acBanVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement7 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acXuatVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acKho = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acLoaiVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -123,7 +123,7 @@
             // 
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.acBanVatLieu,
-            this.accordionControlElement7});
+            this.acXuatVatLieu});
             this.accordionControlElement2.Expanded = true;
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Hóa Đơn Xuất";
@@ -135,11 +135,12 @@
             this.acBanVatLieu.Text = "Bán Vật Liệu";
             this.acBanVatLieu.Click += new System.EventHandler(this.acBanVatLieu_Click);
             // 
-            // accordionControlElement7
+            // acXuatVatLieu
             // 
-            this.accordionControlElement7.Name = "accordionControlElement7";
-            this.accordionControlElement7.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement7.Text = "Xuất Vật Liệu";
+            this.acXuatVatLieu.Name = "acXuatVatLieu";
+            this.acXuatVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acXuatVatLieu.Text = "Xuất Vật Liệu";
+            this.acXuatVatLieu.Click += new System.EventHandler(this.acXuatVatLieu_Click);
             // 
             // accordionControlElement5
             // 
@@ -316,7 +317,7 @@
             this.Name = "frmMain";
             this.NavigationControl = this.accordionControl1;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Quản Lý Vật Liệu Xây Dựng";
+            this.Text = "                   ";
             this.Load += new System.EventHandler(this.frmMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();
@@ -333,7 +334,7 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement acNhapVatLieu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acBanVatLieu;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement7;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement acXuatVatLieu;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acKho;
         private DevExpress.XtraBars.Navigation.AccordionControlElement acDonViTinh;
