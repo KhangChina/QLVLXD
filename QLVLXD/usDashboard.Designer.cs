@@ -28,65 +28,65 @@
         /// </summary>
         private void InitializeComponent()
         {
-            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions1 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
+            DevExpress.XtraEditors.Controls.EditorButtonImageOptions editorButtonImageOptions3 = new DevExpress.XtraEditors.Controls.EditorButtonImageOptions();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usDashboard));
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject1 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject2 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject3 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject4 = new DevExpress.Utils.SerializableAppearanceObject();
-            DevExpress.XtraCharts.XYDiagram xyDiagram1 = new DevExpress.XtraCharts.XYDiagram();
-            DevExpress.XtraCharts.Series series1 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint1 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject9 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject10 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject11 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.Utils.SerializableAppearanceObject serializableAppearanceObject12 = new DevExpress.Utils.SerializableAppearanceObject();
+            DevExpress.XtraCharts.XYDiagram xyDiagram3 = new DevExpress.XtraCharts.XYDiagram();
+            DevExpress.XtraCharts.Series series5 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint49 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint2 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint50 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint3 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint51 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint4 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint52 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint5 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint53 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint6 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint54 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint7 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint55 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint8 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint56 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint9 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint57 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint10 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint58 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint11 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint59 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint12 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint60 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView1 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
-            DevExpress.XtraCharts.BarGrowUpAnimation barGrowUpAnimation1 = new DevExpress.XtraCharts.BarGrowUpAnimation();
-            DevExpress.XtraCharts.BounceEasingFunction bounceEasingFunction1 = new DevExpress.XtraCharts.BounceEasingFunction();
-            DevExpress.XtraCharts.Series series2 = new DevExpress.XtraCharts.Series();
-            DevExpress.XtraCharts.SeriesPoint seriesPoint13 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
+            DevExpress.XtraCharts.SideBySideBarSeriesView sideBySideBarSeriesView3 = new DevExpress.XtraCharts.SideBySideBarSeriesView();
+            DevExpress.XtraCharts.BarGrowUpAnimation barGrowUpAnimation3 = new DevExpress.XtraCharts.BarGrowUpAnimation();
+            DevExpress.XtraCharts.BounceEasingFunction bounceEasingFunction3 = new DevExpress.XtraCharts.BounceEasingFunction();
+            DevExpress.XtraCharts.Series series6 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SeriesPoint seriesPoint61 = new DevExpress.XtraCharts.SeriesPoint(1D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint14 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint62 = new DevExpress.XtraCharts.SeriesPoint(2D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint15 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint63 = new DevExpress.XtraCharts.SeriesPoint(3D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint16 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint64 = new DevExpress.XtraCharts.SeriesPoint(4D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint17 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint65 = new DevExpress.XtraCharts.SeriesPoint(5D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint18 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint66 = new DevExpress.XtraCharts.SeriesPoint(6D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint19 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint67 = new DevExpress.XtraCharts.SeriesPoint(7D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint20 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint68 = new DevExpress.XtraCharts.SeriesPoint(8D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint21 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint69 = new DevExpress.XtraCharts.SeriesPoint(9D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint22 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint70 = new DevExpress.XtraCharts.SeriesPoint(10D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint23 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint71 = new DevExpress.XtraCharts.SeriesPoint(11D, new object[] {
             ((object)(0D))});
-            DevExpress.XtraCharts.SeriesPoint seriesPoint24 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
+            DevExpress.XtraCharts.SeriesPoint seriesPoint72 = new DevExpress.XtraCharts.SeriesPoint(12D, new object[] {
             ((object)(0D))});
             this.btnDuyetHD = new DevExpress.XtraEditors.Repository.RepositoryItemButtonEdit();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
@@ -145,10 +145,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).BeginInit();
             this.layoutControl2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup1)).BeginInit();
@@ -168,9 +168,9 @@
             // btnDuyetHD
             // 
             this.btnDuyetHD.AutoHeight = false;
-            editorButtonImageOptions1.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions1.Image")));
+            editorButtonImageOptions3.Image = ((System.Drawing.Image)(resources.GetObject("editorButtonImageOptions3.Image")));
             this.btnDuyetHD.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions1, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject1, serializableAppearanceObject2, serializableAppearanceObject3, serializableAppearanceObject4, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Glyph, "", -1, true, true, false, editorButtonImageOptions3, new DevExpress.Utils.KeyShortcut(System.Windows.Forms.Keys.None), serializableAppearanceObject9, serializableAppearanceObject10, serializableAppearanceObject11, serializableAppearanceObject12, "", null, null, DevExpress.Utils.ToolTipAnchor.Default)});
             this.btnDuyetHD.Name = "btnDuyetHD";
             this.btnDuyetHD.TextEditStyle = DevExpress.XtraEditors.Controls.TextEditStyles.HideTextEditor;
             this.btnDuyetHD.ButtonClick += new DevExpress.XtraEditors.Controls.ButtonPressedEventHandler(this.btnDuyetHD_ButtonClick_1);
@@ -197,7 +197,7 @@
             this.groupControl3.GroupStyle = DevExpress.Utils.GroupStyle.Light;
             this.groupControl3.Location = new System.Drawing.Point(968, 2);
             this.groupControl3.Name = "groupControl3";
-            this.groupControl3.Size = new System.Drawing.Size(312, 190);
+            this.groupControl3.Size = new System.Drawing.Size(312, 317);
             this.groupControl3.TabIndex = 0;
             this.groupControl3.Text = "Tháng Hiện Tại";
             // 
@@ -210,7 +210,7 @@
             this.layoutControl3.Location = new System.Drawing.Point(2, 23);
             this.layoutControl3.Name = "layoutControl3";
             this.layoutControl3.Root = this.layoutControlGroup2;
-            this.layoutControl3.Size = new System.Drawing.Size(308, 165);
+            this.layoutControl3.Size = new System.Drawing.Size(308, 292);
             this.layoutControl3.TabIndex = 0;
             this.layoutControl3.Text = "layoutControl3";
             // 
@@ -221,12 +221,12 @@
             this.circularGauge1});
             this.gaugeControl1.Location = new System.Drawing.Point(2, 44);
             this.gaugeControl1.Name = "gaugeControl1";
-            this.gaugeControl1.Size = new System.Drawing.Size(304, 119);
+            this.gaugeControl1.Size = new System.Drawing.Size(304, 246);
             this.gaugeControl1.TabIndex = 8;
             // 
             // circularGauge1
             // 
-            this.circularGauge1.Bounds = new System.Drawing.Rectangle(6, 6, 292, 107);
+            this.circularGauge1.Bounds = new System.Drawing.Rectangle(6, 6, 292, 234);
             this.circularGauge1.Labels.AddRange(new DevExpress.XtraGauges.Win.Base.LabelComponent[] {
             this.labelComponent1});
             this.circularGauge1.Name = "circularGauge1";
@@ -312,7 +312,7 @@
             this.layoutControlItem5});
             this.layoutControlGroup2.Name = "layoutControlGroup2";
             this.layoutControlGroup2.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
-            this.layoutControlGroup2.Size = new System.Drawing.Size(308, 165);
+            this.layoutControlGroup2.Size = new System.Drawing.Size(308, 292);
             this.layoutControlGroup2.TextVisible = false;
             // 
             // layoutControlItem7
@@ -340,9 +340,10 @@
             this.layoutControlItem5.Control = this.gaugeControl1;
             this.layoutControlItem5.Location = new System.Drawing.Point(0, 26);
             this.layoutControlItem5.Name = "layoutControlItem5";
-            this.layoutControlItem5.Size = new System.Drawing.Size(308, 139);
+            this.layoutControlItem5.Size = new System.Drawing.Size(308, 266);
+            this.layoutControlItem5.Text = "Doanh Thu";
             this.layoutControlItem5.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem5.TextSize = new System.Drawing.Size(93, 13);
+            this.layoutControlItem5.TextSize = new System.Drawing.Size(52, 13);
             // 
             // groupControl1
             // 
@@ -371,49 +372,51 @@
             // chartControl1
             // 
             this.chartControl1.AnimationStartMode = DevExpress.XtraCharts.ChartAnimationMode.OnDataChanged;
-            xyDiagram1.AxisX.VisibleInPanesSerializable = "-1";
-            xyDiagram1.AxisY.VisibleInPanesSerializable = "-1";
-            this.chartControl1.Diagram = xyDiagram1;
+            xyDiagram3.AxisX.VisibleInPanesSerializable = "-1";
+            xyDiagram3.AxisY.VisibleInPanesSerializable = "-1";
+            this.chartControl1.Diagram = xyDiagram3;
             this.chartControl1.Legend.Name = "Default Legend";
             this.chartControl1.Location = new System.Drawing.Point(2, 2);
             this.chartControl1.Name = "chartControl1";
-            series1.ArgumentDataMember = "Month";
-            series1.Name = "Hóa Đơn Đã Mua";
-            series1.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint1,
-            seriesPoint2,
-            seriesPoint3,
-            seriesPoint4,
-            seriesPoint5,
-            seriesPoint6,
-            seriesPoint7,
-            seriesPoint8,
-            seriesPoint9,
-            seriesPoint10,
-            seriesPoint11,
-            seriesPoint12});
-            series1.ValueDataMembersSerializable = "Sum";
-            bounceEasingFunction1.EasingMode = DevExpress.XtraCharts.EasingMode.Out;
-            barGrowUpAnimation1.EasingFunction = bounceEasingFunction1;
-            sideBySideBarSeriesView1.Animation = barGrowUpAnimation1;
-            series1.View = sideBySideBarSeriesView1;
-            series2.Name = "Hóa Đơn Đã Bán";
-            series2.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
-            seriesPoint13,
-            seriesPoint14,
-            seriesPoint15,
-            seriesPoint16,
-            seriesPoint17,
-            seriesPoint18,
-            seriesPoint19,
-            seriesPoint20,
-            seriesPoint21,
-            seriesPoint22,
-            seriesPoint23,
-            seriesPoint24});
+            series5.ArgumentDataMember = "Month";
+            series5.Name = "Hóa Đơn Đã Mua";
+            series5.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint49,
+            seriesPoint50,
+            seriesPoint51,
+            seriesPoint52,
+            seriesPoint53,
+            seriesPoint54,
+            seriesPoint55,
+            seriesPoint56,
+            seriesPoint57,
+            seriesPoint58,
+            seriesPoint59,
+            seriesPoint60});
+            series5.ValueDataMembersSerializable = "Sum";
+            bounceEasingFunction3.EasingMode = DevExpress.XtraCharts.EasingMode.Out;
+            barGrowUpAnimation3.EasingFunction = bounceEasingFunction3;
+            sideBySideBarSeriesView3.Animation = barGrowUpAnimation3;
+            series5.View = sideBySideBarSeriesView3;
+            series6.ArgumentDataMember = "Month";
+            series6.Name = "Hóa Đơn Đã Bán";
+            series6.Points.AddRange(new DevExpress.XtraCharts.SeriesPoint[] {
+            seriesPoint61,
+            seriesPoint62,
+            seriesPoint63,
+            seriesPoint64,
+            seriesPoint65,
+            seriesPoint66,
+            seriesPoint67,
+            seriesPoint68,
+            seriesPoint69,
+            seriesPoint70,
+            seriesPoint71,
+            seriesPoint72});
+            series6.ValueDataMembersSerializable = "SLX";
             this.chartControl1.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
-        series1,
-        series2};
+        series5,
+        series6};
             this.chartControl1.Size = new System.Drawing.Size(944, 675);
             this.chartControl1.TabIndex = 4;
             // 
@@ -458,9 +461,9 @@
             this.groupControl2.AppearanceCaption.Options.UseFont = true;
             this.groupControl2.Controls.Add(this.grc);
             this.groupControl2.GroupStyle = DevExpress.Utils.GroupStyle.Light;
-            this.groupControl2.Location = new System.Drawing.Point(968, 206);
+            this.groupControl2.Location = new System.Drawing.Point(968, 333);
             this.groupControl2.Name = "groupControl2";
-            this.groupControl2.Size = new System.Drawing.Size(312, 500);
+            this.groupControl2.Size = new System.Drawing.Size(312, 373);
             this.groupControl2.TabIndex = 4;
             this.groupControl2.Text = "Danh Sách Hóa Đơn Cần Duyệt";
             // 
@@ -470,7 +473,7 @@
             this.grc.Location = new System.Drawing.Point(2, 23);
             this.grc.MainView = this.grv;
             this.grc.Name = "grc";
-            this.grc.Size = new System.Drawing.Size(308, 475);
+            this.grc.Size = new System.Drawing.Size(308, 348);
             this.grc.TabIndex = 0;
             this.grc.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.grv});
@@ -532,9 +535,9 @@
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.groupControl2;
-            this.layoutControlItem1.Location = new System.Drawing.Point(966, 204);
+            this.layoutControlItem1.Location = new System.Drawing.Point(966, 331);
             this.layoutControlItem1.Name = "layoutControlItem1";
-            this.layoutControlItem1.Size = new System.Drawing.Size(316, 504);
+            this.layoutControlItem1.Size = new System.Drawing.Size(316, 377);
             this.layoutControlItem1.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem1.TextVisible = false;
             // 
@@ -552,7 +555,7 @@
             this.layoutControlItem3.Control = this.groupControl3;
             this.layoutControlItem3.Location = new System.Drawing.Point(966, 0);
             this.layoutControlItem3.Name = "layoutControlItem3";
-            this.layoutControlItem3.Size = new System.Drawing.Size(316, 194);
+            this.layoutControlItem3.Size = new System.Drawing.Size(316, 321);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
             // 
@@ -566,7 +569,7 @@
             // splitterItem2
             // 
             this.splitterItem2.AllowHotTrack = true;
-            this.splitterItem2.Location = new System.Drawing.Point(966, 194);
+            this.splitterItem2.Location = new System.Drawing.Point(966, 321);
             this.splitterItem2.Name = "splitterItem2";
             this.splitterItem2.Size = new System.Drawing.Size(316, 10);
             // 
@@ -599,10 +602,10 @@
             this.groupControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl2)).EndInit();
             this.layoutControl2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(xyDiagram1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(series2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBarSeriesView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

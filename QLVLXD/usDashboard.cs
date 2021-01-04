@@ -29,6 +29,7 @@ namespace QLVLXD
             InitializeComponent();
         }
         dbQLVLXDTableAdapters.tblHoaDonNhapTableAdapter dataHoaDonNhap = new dbQLVLXDTableAdapters.tblHoaDonNhapTableAdapter();
+        dbQLVLXDTableAdapters.tblHoaDonXuatTableAdapter dataHoaDonXuat = new dbQLVLXDTableAdapters.tblHoaDonXuatTableAdapter();
         private void usDashboard_Load(object sender, EventArgs e)
         {        
             DateTime now = DateTime.Now;
@@ -40,9 +41,10 @@ namespace QLVLXD
             DataTable dt = new DataTable();
             dt.Columns.Add("Month",typeof(decimal));
             dt.Columns.Add("Sum",typeof(decimal));
+            dt.Columns.Add("SLX", typeof(decimal));
             for (int i = 1; i <= 12; i++)
             {
-                dt.Rows.Add(i, decimal.Parse(dataHoaDonNhap.GetDataBySumMonthYear(Year, i).Rows[0]["Sum"].ToString()));
+                dt.Rows.Add(i, decimal.Parse(dataHoaDonNhap.GetDataBySumMonthYear(Year, i).Rows[0]["Sum"].ToString()), decimal.Parse(dataHoaDonXuat.GetDataBySumMonthYear(Year, i).Rows[0]["Sum"].ToString()));
             }
             chartControl1.DataSource = dt;
 
@@ -65,9 +67,22 @@ namespace QLVLXD
             //arcScaleComponent2.Value = int.Parse(dataHoaDonNhap.GetSLHoaDonByTrangThai(2, month, Year).Rows[0]["SoLuongHD"].ToString());
             //labelComponent2.Text = dataHoaDonNhap.GetSLHoaDonByTrangThai(2, month, Year).Rows[0]["SoLuongHD"].ToString();
             //#endregion
-
+            double giaXuat = 0;
+            double giaNhap = 0;
+            if (dataHoaDonXuat.TongGiaTheoNam(Year).Rows[0]["TongGia"].ToString().Length > 0)
+            {
+                giaXuat = double.Parse(dataHoaDonXuat.TongGiaTheoNam(Year).Rows[0]["TongGia"].ToString());              
+            }
+            if(dataHoaDonNhap.TongGiaTheoNam(Year).Rows[0]["TongGia"].ToString().Length > 0)
+            {
+                giaNhap = double.Parse(dataHoaDonNhap.TongGiaTheoNam(Year).Rows[0]["TongGia"].ToString());
+            }
+           
+            arcScaleComponent1.MinValue = 0;
+            arcScaleComponent1.Value = (float)(giaXuat - giaNhap);
+            arcScaleComponent1.MaxValue = (float)giaXuat;
+            labelComponent1.Text = giaXuat.ToString();
         }
-
         private void btnGetData_Click(object sender, EventArgs e)
         {           
             GetData(dateNow.DateTime.Month,dateNow.DateTime.Year);      
