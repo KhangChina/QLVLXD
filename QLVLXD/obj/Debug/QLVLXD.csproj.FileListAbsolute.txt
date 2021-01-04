@@ -348,3 +348,4 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmChiTietPhieuXuat.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyChiTietHoaDonXuat.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.usXuatKho.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmPhieuGiaoXuat.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmModifyPhieuGiaoXuat.resources

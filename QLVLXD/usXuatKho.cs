@@ -55,7 +55,10 @@ namespace QLVLXD
 
         private void btnTaoPhieuXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-
+            int IDHDX = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
+            frmPhieuGiaoXuat frm = new frmPhieuGiaoXuat(IDHDX);
+            frm.ShowDialog();
+            grc.DataSource = dataHDXuat.GetData();
         }
     }
 }

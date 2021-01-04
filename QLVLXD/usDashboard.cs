@@ -76,9 +76,11 @@ namespace QLVLXD
             arcScaleComponent1.EnableAnimation = true;
         }
 
-        private void btnDuyetHD_ButtonClick(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
+       
+
+        private void btnDuyetHD_ButtonClick_1(object sender, DevExpress.XtraEditors.Controls.ButtonPressedEventArgs e)
         {
-            int ID  = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
+            int ID = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
             dataHoaDonNhap.UpdateTrangThaiByAdmin(int.Parse(Session.dtNhanVien.Rows[0]["ID"].ToString()), 1, ID);
             grc.DataSource = dataHoaDonNhap.GetDataByTrangThai(0);
         }

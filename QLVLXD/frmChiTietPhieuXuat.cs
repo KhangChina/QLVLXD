@@ -69,8 +69,7 @@ namespace QLVLXD
 
         }
         private void btnThemCTHD_Click(object sender, EventArgs e)
-        {
-            //int IDCTHDX = int.Parse(grv.GetRowCellValue(grv.FocusedRowHandle, "ID").ToString());
+        {           
             frmModifyChiTietHoaDonXuat frm = new frmModifyChiTietHoaDonXuat(IDHDX);
             frm.ShowDialog();
             LoadData();
