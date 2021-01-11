@@ -49,5 +49,12 @@ namespace QLVLXD
         {
             grc.DataSource = data.GetDataByTrangThai(1);
         }
+
+        private void btnXuatHoaDonNhap_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int IDHDN = int.Parse(grv.GetFocusedRowCellValue(colID).ToString());
+            frmReportXuatHoaDonNhap frm = new frmReportXuatHoaDonNhap(IDHDN);
+            frm.ShowDialog();
+        }
     }
 }

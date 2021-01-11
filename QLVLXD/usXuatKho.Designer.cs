@@ -34,11 +34,12 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnTaoPhieuXuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnListPhieuXuat = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.grc = new DevExpress.XtraGrid.GridControl();
             this.grv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -52,7 +53,6 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTongGia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookKH = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -96,8 +96,8 @@
             // 
             this.btnTaoPhieuXuat.Caption = "Tạo Phiếu Xuất";
             this.btnTaoPhieuXuat.Id = 0;
-            this.btnTaoPhieuXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnTaoPhieuXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.btnTaoPhieuXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnTaoPhieuXuat.ImageOptions.Image")));
+            this.btnTaoPhieuXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnTaoPhieuXuat.ImageOptions.LargeImage")));
             this.btnTaoPhieuXuat.Name = "btnTaoPhieuXuat";
             this.btnTaoPhieuXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnTaoPhieuXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaoPhieuXuat_ItemClick);
@@ -106,16 +106,20 @@
             // 
             this.btnListPhieuXuat.Caption = "Danh Sách Phiếu Xuất";
             this.btnListPhieuXuat.Id = 1;
-            this.btnListPhieuXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.btnListPhieuXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.btnListPhieuXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnListPhieuXuat.ImageOptions.Image")));
+            this.btnListPhieuXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnListPhieuXuat.ImageOptions.LargeImage")));
             this.btnListPhieuXuat.Name = "btnListPhieuXuat";
             this.btnListPhieuXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
-            // barButtonItem3
+            // btnLamMoi
             // 
-            this.barButtonItem3.Caption = "barButtonItem3";
-            this.barButtonItem3.Id = 2;
-            this.barButtonItem3.Name = "barButtonItem3";
+            this.btnLamMoi.Caption = "Làm Mới";
+            this.btnLamMoi.Id = 3;
+            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.Image")));
+            this.btnLamMoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnLamMoi.ImageOptions.LargeImage")));
+            this.btnLamMoi.Name = "btnLamMoi";
+            this.btnLamMoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnLamMoi.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnLamMoi_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -148,6 +152,12 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1115, 24);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 702);
+            // 
+            // barButtonItem3
+            // 
+            this.barButtonItem3.Caption = "barButtonItem3";
+            this.barButtonItem3.Id = 2;
+            this.barButtonItem3.Name = "barButtonItem3";
             // 
             // grc
             // 
@@ -256,15 +266,6 @@
             this.lookKH.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKH.Name = "lookKH";
-            // 
-            // btnLamMoi
-            // 
-            this.btnLamMoi.Caption = "Làm Mới";
-            this.btnLamMoi.Id = 3;
-            this.btnLamMoi.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.Image")));
-            this.btnLamMoi.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem4.ImageOptions.LargeImage")));
-            this.btnLamMoi.Name = "btnLamMoi";
-            this.btnLamMoi.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // usXuatKho
             // 

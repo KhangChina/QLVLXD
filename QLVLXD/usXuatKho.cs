@@ -60,5 +60,25 @@ namespace QLVLXD
             frm.ShowDialog();
             grc.DataSource = dataHDXuat.GetData();
         }
+
+        private void btnLamMoi_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            lookKH.DisplayMember = "TenKhachHang";
+            lookKH.ValueMember = "ID";
+            lookKH.DataSource = dataKhachHang.GetData();
+            colKH.ColumnEdit = lookKH;
+
+            lookNV.DisplayMember = "TenNV";
+            lookNV.ValueMember = "ID";
+            lookNV.DataSource = dataNhanVien.GetData();
+            colNV.ColumnEdit = lookNV;
+
+            lookTrangThai.DisplayMember = "Ten";
+            lookTrangThai.ValueMember = "ID";
+            lookTrangThai.DataSource = Session.KhoiTaoTrangThaiXuatHoaDon();
+            colTrangThai.ColumnEdit = lookTrangThai;
+
+            grc.DataSource = dataHDXuat.GetData();
+        }
     }
 }

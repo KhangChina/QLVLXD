@@ -35,6 +35,7 @@
             this.btnTaoPhieu = new DevExpress.XtraBars.BarButtonItem();
             this.btnChiTietPhieuDat = new DevExpress.XtraBars.BarButtonItem();
             this.btnDuyet = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
@@ -52,7 +53,7 @@
             this.loopTrangThai = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -75,9 +76,10 @@
             this.barButtonItem4,
             this.btnChiTietPhieuDat,
             this.btnDuyet,
-            this.barButtonItem1});
+            this.barButtonItem1,
+            this.barButtonItem5});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 7;
+            this.barManager1.MaxItemId = 8;
             // 
             // bar2
             // 
@@ -88,7 +90,6 @@
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnTaoPhieu),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnChiTietPhieuDat),
-            new DevExpress.XtraBars.LinkPersistInfo(this.btnDuyet),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem1)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -123,6 +124,15 @@
             this.btnDuyet.Name = "btnDuyet";
             this.btnDuyet.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnDuyet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDuyet_ItemClick);
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Làm mới";
+            this.barButtonItem1.Id = 6;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // barDockControlTop
             // 
@@ -260,14 +270,11 @@
             this.colID.Visible = true;
             this.colID.VisibleIndex = 0;
             // 
-            // barButtonItem1
+            // barButtonItem5
             // 
-            this.barButtonItem1.Caption = "Làm mới";
-            this.barButtonItem1.Id = 6;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.barButtonItem5.Caption = "Xuất Hóa Đơn Đặc";
+            this.barButtonItem5.Id = 7;
+            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // usDatVatLieu
             // 
@@ -315,5 +322,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraBars.BarButtonItem btnDuyet;
         private DevExpress.XtraBars.BarButtonItem barButtonItem1;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem5;
     }
 }
