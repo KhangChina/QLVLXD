@@ -11304,8 +11304,9 @@ SELECT ID, IDHoaDonXuat, IDKho, IDHH, IDGiamGia, SoLuongXuat, DonGiaXuat, IDKhoH
 FROM            tblChiTietHoaDonXuat INNER JOIN
                          tblHangHoa ON tblChiTietHoaDonXuat.IDHH = tblHangHoa.ID INNER JOIN
                          tblGiamGia ON tblChiTietHoaDonXuat.IDGiamGia = tblGiamGia.ID INNER JOIN
-                         tblKhachHang ON tblChiTietHoaDonXuat.ID = tblKhachHang.ID INNER JOIN
-                         tblPhieuGiaoXuat ON tblChiTietHoaDonXuat.ID = tblPhieuGiaoXuat.IDChiTietHoaDonXuat
+                         tblPhieuGiaoXuat ON tblChiTietHoaDonXuat.ID = tblPhieuGiaoXuat.IDChiTietHoaDonXuat INNER JOIN
+                         tblHoaDonXuat ON tblChiTietHoaDonXuat.IDHoaDonXuat = tblHoaDonXuat.ID INNER JOIN
+                         tblKhachHang ON tblHoaDonXuat.IDKH = tblKhachHang.ID
 WHERE        (tblChiTietHoaDonXuat.IDHoaDonXuat = @IDHoaDonXuat) AND (tblPhieuGiaoXuat.LanXuat = @LanXuat)";
             this._commandCollection[4].CommandType = global::System.Data.CommandType.Text;
             this._commandCollection[4].Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IDHoaDonXuat", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "IDHoaDonXuat", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
