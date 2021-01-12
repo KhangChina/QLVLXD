@@ -403,3 +403,6 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ja\DevExpress.Diagram.v19.2.Core.resou
 D:\Project\C#\Git\QLVLXD\QLVLXD\bin\Debug\ru\DevExpress.Diagram.v19.2.Core.resources.dll
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmReportXuatHoaDonNhap.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.rpHoaDonNhap.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.csprojAssemblyReference.cache
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmReportXuatHoaDonXuat.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.rpHoaDonXuat.resources

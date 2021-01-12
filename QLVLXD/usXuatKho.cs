@@ -80,5 +80,14 @@ namespace QLVLXD
 
             grc.DataSource = dataHDXuat.GetData();
         }
+
+        private void btnXuatHoaDonXuat_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (grv.FocusedRowHandle < 0)
+                return;
+            int ID = int.Parse(grv.GetFocusedRowCellValue(colID).ToString());
+            frmReportXuatHoaDonXuat frm = new frmReportXuatHoaDonXuat(ID);
+            frm.ShowDialog();
+        }
     }
 }

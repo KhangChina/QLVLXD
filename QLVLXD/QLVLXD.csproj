@@ -217,6 +217,12 @@
     <Compile Include="frmReportXuatHoaDonNhap.Designer.cs">
       <DependentUpon>frmReportXuatHoaDonNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmReportXuatHoaDonXuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReportXuatHoaDonXuat.Designer.cs">
+      <DependentUpon>frmReportXuatHoaDonXuat.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="rpHoaDonNhap.cs">
@@ -224,6 +230,12 @@
     </Compile>
     <Compile Include="rpHoaDonNhap.Designer.cs">
       <DependentUpon>rpHoaDonNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rpHoaDonXuat.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="rpHoaDonXuat.Designer.cs">
+      <DependentUpon>rpHoaDonXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
     <Compile Include="usBanVatLieu.cs">
@@ -385,6 +397,9 @@
     <EmbeddedResource Include="frmReportXuatHoaDonNhap.resx">
       <DependentUpon>frmReportXuatHoaDonNhap.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmReportXuatHoaDonXuat.resx">
+      <DependentUpon>frmReportXuatHoaDonXuat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -397,6 +412,9 @@
     </Compile>
     <EmbeddedResource Include="rpHoaDonNhap.resx">
       <DependentUpon>rpHoaDonNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rpHoaDonXuat.resx">
+      <DependentUpon>rpHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="usBanVatLieu.resx">
       <DependentUpon>usBanVatLieu.cs</DependentUpon>

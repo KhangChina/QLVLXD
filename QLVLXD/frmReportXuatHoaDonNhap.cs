@@ -19,8 +19,9 @@ namespace QLVLXD
         {
             InitializeComponent();
             this.IDHDN = IDHDN;
-           
-           
+            txtSoLan.EditValue = "1";
+
+
 
         }
         dbQLVLXDTableAdapters.tblChiTietHoaDonNhapTableAdapter data = new dbQLVLXDTableAdapters.tblChiTietHoaDonNhapTableAdapter();

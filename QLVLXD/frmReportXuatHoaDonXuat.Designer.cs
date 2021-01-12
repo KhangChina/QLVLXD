@@ -1,6 +1,6 @@
 ﻿namespace QLVLXD
 {
-    partial class frmReportXuatHoaDonNhap
+    partial class frmReportXuatHoaDonXuat
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportXuatHoaDonNhap));
-            this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmReportXuatHoaDonXuat));
             this.documentViewer1 = new DevExpress.XtraPrinting.Preview.DocumentViewer();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.documentViewerBarManager1 = new DevExpress.XtraPrinting.Preview.DocumentViewerBarManager(this.components);
             this.previewBar1 = new DevExpress.XtraPrinting.Preview.PreviewBar();
             this.txtSoLan = new DevExpress.XtraBars.BarEditItem();
@@ -108,10 +105,6 @@
             this.printPreviewBarCheckItem18 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.printPreviewBarCheckItem19 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
-            this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.documentViewerBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.printPreviewRepositoryItemComboBox1)).BeginInit();
@@ -119,44 +112,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemZoomTrackBar1)).BeginInit();
             this.SuspendLayout();
             // 
-            // layoutControl1
-            // 
-            this.layoutControl1.Controls.Add(this.documentViewer1);
-            this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.layoutControl1.Location = new System.Drawing.Point(0, 45);
-            this.layoutControl1.Name = "layoutControl1";
-            this.layoutControl1.Root = this.Root;
-            this.layoutControl1.Size = new System.Drawing.Size(1454, 662);
-            this.layoutControl1.TabIndex = 0;
-            this.layoutControl1.Text = "layoutControl1";
-            // 
             // documentViewer1
             // 
+            this.documentViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.documentViewer1.IsMetric = false;
-            this.documentViewer1.Location = new System.Drawing.Point(12, 12);
+            this.documentViewer1.Location = new System.Drawing.Point(0, 45);
             this.documentViewer1.Name = "documentViewer1";
-            this.documentViewer1.Size = new System.Drawing.Size(1430, 638);
-            this.documentViewer1.TabIndex = 5;
-            // 
-            // Root
-            // 
-            this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
-            this.Root.GroupBordersVisible = false;
-            this.Root.Items.AddRange(new DevExpress.XtraLayout.BaseLayoutItem[] {
-            this.layoutControlItem2});
-            this.Root.Name = "Root";
-            this.Root.Size = new System.Drawing.Size(1454, 662);
-            this.Root.TextVisible = false;
-            // 
-            // layoutControlItem2
-            // 
-            this.layoutControlItem2.Control = this.documentViewer1;
-            this.layoutControlItem2.Location = new System.Drawing.Point(0, 0);
-            this.layoutControlItem2.Name = "layoutControlItem2";
-            this.layoutControlItem2.Size = new System.Drawing.Size(1434, 642);
-            this.layoutControlItem2.TextLocation = DevExpress.Utils.Locations.Top;
-            this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
-            this.layoutControlItem2.TextVisible = false;
+            this.documentViewer1.Size = new System.Drawing.Size(1249, 649);
+            this.documentViewer1.TabIndex = 0;
             // 
             // documentViewerBarManager1
             // 
@@ -231,8 +194,8 @@
             this.printPreviewBarCheckItem17,
             this.printPreviewBarCheckItem18,
             this.printPreviewBarCheckItem19,
-            this.txtSoLan,
             this.btnGetData,
+            this.txtSoLan,
             this.barStaticItem1});
             this.documentViewerBarManager1.MainMenu = this.previewBar3;
             this.documentViewerBarManager1.MaxItemId = 62;
@@ -289,7 +252,7 @@
             // 
             this.txtSoLan.Caption = "barEditItem1";
             this.txtSoLan.Edit = this.repositoryItemSpinEdit1;
-            this.txtSoLan.Id = 59;
+            this.txtSoLan.Id = 60;
             this.txtSoLan.Name = "txtSoLan";
             // 
             // repositoryItemSpinEdit1
@@ -302,7 +265,7 @@
             // btnGetData
             // 
             this.btnGetData.Caption = "Lấy Dữ Liệu";
-            this.btnGetData.Id = 60;
+            this.btnGetData.Id = 59;
             this.btnGetData.Name = "btnGetData";
             this.btnGetData.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnGetData_ItemClick);
             // 
@@ -753,15 +716,15 @@
             this.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.documentViewerBarManager1;
-            this.barDockControlTop.Size = new System.Drawing.Size(1454, 45);
+            this.barDockControlTop.Size = new System.Drawing.Size(1249, 45);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 707);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 694);
             this.barDockControlBottom.Manager = this.documentViewerBarManager1;
-            this.barDockControlBottom.Size = new System.Drawing.Size(1454, 22);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1249, 22);
             // 
             // barDockControlLeft
             // 
@@ -769,15 +732,15 @@
             this.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 45);
             this.barDockControlLeft.Manager = this.documentViewerBarManager1;
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 662);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 649);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(1454, 45);
+            this.barDockControlRight.Location = new System.Drawing.Point(1249, 45);
             this.barDockControlRight.Manager = this.documentViewerBarManager1;
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 662);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 649);
             // 
             // printPreviewBarCheckItem1
             // 
@@ -975,26 +938,22 @@
             // 
             // barStaticItem1
             // 
-            this.barStaticItem1.Caption = "Nhập Số Lần";
+            this.barStaticItem1.Caption = "Nhập số lần";
             this.barStaticItem1.Id = 61;
             this.barStaticItem1.Name = "barStaticItem1";
             // 
-            // frmReportXuatHoaDonNhap
+            // frmReportXuatHoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1454, 729);
-            this.Controls.Add(this.layoutControl1);
+            this.ClientSize = new System.Drawing.Size(1249, 716);
+            this.Controls.Add(this.documentViewer1);
             this.Controls.Add(this.barDockControlLeft);
             this.Controls.Add(this.barDockControlRight);
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
-            this.Name = "frmReportXuatHoaDonNhap";
-            this.Text = "frmReportXuatHoaDonNhap";
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
-            this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            this.Name = "frmReportXuatHoaDonXuat";
+            this.Text = "frmReportXuatHoaDonXuat";
             ((System.ComponentModel.ISupportInitialize)(this.documentViewerBarManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.printPreviewRepositoryItemComboBox1)).EndInit();
@@ -1007,10 +966,7 @@
 
         #endregion
 
-        private DevExpress.XtraLayout.LayoutControl layoutControl1;
-        private DevExpress.XtraLayout.LayoutControlGroup Root;
         private DevExpress.XtraPrinting.Preview.DocumentViewer documentViewer1;
-        private DevExpress.XtraLayout.LayoutControlItem layoutControlItem2;
         private DevExpress.XtraPrinting.Preview.DocumentViewerBarManager documentViewerBarManager1;
         private DevExpress.XtraPrinting.Preview.PreviewBar previewBar1;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiDocumentMap;
@@ -1042,8 +998,6 @@
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiExportFile;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiSendFile;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarItem bbiClosePreview;
-        private DevExpress.XtraBars.BarEditItem txtSoLan;
-        private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
         private DevExpress.XtraPrinting.Preview.PreviewBar previewBar2;
         private DevExpress.XtraPrinting.Preview.PrintPreviewStaticItem printPreviewStaticItem1;
         private DevExpress.XtraPrinting.Preview.ProgressBarEditItem progressBarEditItem1;
@@ -1084,6 +1038,8 @@
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem18;
         private DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem printPreviewBarCheckItem19;
         private DevExpress.XtraBars.BarButtonItem btnGetData;
+        private DevExpress.XtraBars.BarEditItem txtSoLan;
+        private DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit repositoryItemSpinEdit1;
         private DevExpress.XtraBars.BarStaticItem barStaticItem1;
     }
 }

@@ -42,7 +42,7 @@
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.grc = new DevExpress.XtraGrid.GridControl();
             this.grv = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colKH = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colNV = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookNV = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
@@ -53,6 +53,7 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTongGia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookKH = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
+            this.btnXuatHoaDonXuat = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -74,9 +75,10 @@
             this.btnTaoPhieuXuat,
             this.btnListPhieuXuat,
             this.barButtonItem3,
-            this.btnLamMoi});
+            this.btnLamMoi,
+            this.btnXuatHoaDonXuat});
             this.barManager1.MainMenu = this.bar2;
-            this.barManager1.MaxItemId = 4;
+            this.barManager1.MaxItemId = 5;
             // 
             // bar2
             // 
@@ -87,6 +89,7 @@
             this.bar2.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.btnTaoPhieuXuat),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnListPhieuXuat),
+            new DevExpress.XtraBars.LinkPersistInfo(this.btnXuatHoaDonXuat),
             new DevExpress.XtraBars.LinkPersistInfo(this.btnLamMoi)});
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
@@ -178,7 +181,7 @@
             // grv
             // 
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.gridColumn1,
+            this.colID,
             this.colKH,
             this.colNV,
             this.gridColumn4,
@@ -190,12 +193,12 @@
             this.grv.Name = "grv";
             this.grv.OptionsView.ShowGroupPanel = false;
             // 
-            // gridColumn1
+            // colID
             // 
-            this.gridColumn1.FieldName = "ID";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
+            this.colID.FieldName = "ID";
+            this.colID.Name = "colID";
+            this.colID.Visible = true;
+            this.colID.VisibleIndex = 0;
             // 
             // colKH
             // 
@@ -267,6 +270,15 @@
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKH.Name = "lookKH";
             // 
+            // btnXuatHoaDonXuat
+            // 
+            this.btnXuatHoaDonXuat.Caption = "Xuất Hóa Đơn Xuất";
+            this.btnXuatHoaDonXuat.Id = 4;
+            this.btnXuatHoaDonXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.btnXuatHoaDonXuat.Name = "btnXuatHoaDonXuat";
+            this.btnXuatHoaDonXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnXuatHoaDonXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXuatHoaDonXuat_ItemClick);
+            // 
             // usXuatKho
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -303,7 +315,7 @@
         private DevExpress.XtraBars.BarDockControl barDockControlRight;
         private DevExpress.XtraGrid.GridControl grc;
         private DevExpress.XtraGrid.Views.Grid.GridView grv;
-        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn colID;
         private DevExpress.XtraGrid.Columns.GridColumn colKH;
         private DevExpress.XtraGrid.Columns.GridColumn colNV;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lookNV;
@@ -315,5 +327,6 @@
         private DevExpress.XtraGrid.Columns.GridColumn colTongGia;
         private DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit lookKH;
         private DevExpress.XtraBars.BarButtonItem btnLamMoi;
+        private DevExpress.XtraBars.BarButtonItem btnXuatHoaDonXuat;
     }
 }
