@@ -129,16 +129,23 @@ namespace QLVLXD
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
-            Session.dtNhanVien = new DataTable();
-            Session.dtNhanVien = data.GetLogin("0964440775", "1");
-            if(Session.dtNhanVien.Rows.Count>0)
+         
+            txtNhanVienSession.Caption = Session.dtNhanVien.Rows[0]["TenNV"].ToString();
+            if(Session.dtNhanVien.Rows[0]["IDPhanQuyen"].ToString() == "2")
             {
-                txtNhanVienSession.Caption = Session.dtNhanVien.Rows[0]["TenNV"].ToString();
+                acDsHoaDon.Visible = true;
+                acThongKe.Visible = true;
+
+
             }
-            else
+            if(Session.dtNhanVien.Rows[0]["IDPhanQuyen"].ToString() == "1")
             {
-                XtraMessageBox.Show("Đăng nhập Fail");
-            }
+                acDsHoaDon.Visible = true;
+                acSystem.Visible = true;
+                acSetting.Visible = true;
+                acThongKe.Visible = true;
+            } 
+
         }
 
         private void accordionControlElement9_Click(object sender, EventArgs e)
@@ -194,6 +201,17 @@ namespace QLVLXD
                 usXuatKho.Instance.BringToFront();
             }
             usXuatKho.Instance.BringToFront();
+        }
+
+        private void acBanChay_Click(object sender, EventArgs e)
+        {
+            if (!container.Controls.Contains(usBanChay.Instance))
+            {
+                container.Controls.Add(usBanChay.Instance);
+                usBanChay.Instance.Dock = DockStyle.Fill;
+                usBanChay.Instance.BringToFront();
+            }
+            usBanChay.Instance.BringToFront();
         }
     }
 }

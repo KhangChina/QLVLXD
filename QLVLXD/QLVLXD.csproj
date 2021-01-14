@@ -11,6 +11,21 @@
     <AssemblyName>QLVLXD</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -46,6 +61,7 @@
     <Reference Include="DevExpress.XtraBars.v19.2" />
     <Reference Include="DevExpress.Sparkline.v19.2.Core" />
     <Reference Include="DevExpress.XtraCharts.v19.2, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v19.2.Extensions, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v19.2.UI, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="DevExpress.XtraCharts.v19.2.Wizard, Version=19.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="DevExpress.XtraEditors.v19.2" />
@@ -84,6 +100,12 @@
     </Compile>
     <Compile Include="frmChiTietPhieuXuat.Designer.cs">
       <DependentUpon>frmChiTietPhieuXuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmModifyChiTietHoaDonXuat.cs">
       <SubType>Form</SubType>
@@ -238,6 +260,12 @@
       <DependentUpon>rpHoaDonXuat.cs</DependentUpon>
     </Compile>
     <Compile Include="Session.cs" />
+    <Compile Include="usBanChay.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="usBanChay.Designer.cs">
+      <DependentUpon>usBanChay.cs</DependentUpon>
+    </Compile>
     <Compile Include="usBanVatLieu.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -331,6 +359,9 @@
     <EmbeddedResource Include="frmChiTietPhieuXuat.resx">
       <DependentUpon>frmChiTietPhieuXuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmModifyChiTietHoaDonXuat.resx">
       <DependentUpon>frmModifyChiTietHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>
@@ -416,6 +447,9 @@
     <EmbeddedResource Include="rpHoaDonXuat.resx">
       <DependentUpon>rpHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="usBanChay.resx">
+      <DependentUpon>usBanChay.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="usBanVatLieu.resx">
       <DependentUpon>usBanVatLieu.cs</DependentUpon>
     </EmbeddedResource>
@@ -482,6 +516,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

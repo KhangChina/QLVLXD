@@ -406,3 +406,5 @@ D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.rpHoaDonNhap.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.csprojAssemblyReference.cache
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmReportXuatHoaDonXuat.resources
 D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.rpHoaDonXuat.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.frmLogin.resources
+D:\Project\C#\Git\QLVLXD\QLVLXD\obj\Debug\QLVLXD.usBanChay.resources
