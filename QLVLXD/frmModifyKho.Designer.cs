@@ -29,25 +29,25 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.loopTrangThai = new DevExpress.XtraEditors.LookUpEdit();
             this.txtTenKho = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.emptySpaceItem1 = new DevExpress.XtraLayout.EmptySpaceItem();
-            this.loopTrangThai = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.btnThem = new DevExpress.XtraEditors.SimpleButton();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKho.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             this.SuspendLayout();
@@ -66,6 +66,42 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(457, 26);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(81, 22);
+            this.btnThem.StyleController = this.layoutControl1;
+            this.btnThem.TabIndex = 8;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(2, 26);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(451, 22);
+            this.separatorControl1.TabIndex = 7;
+            // 
+            // loopTrangThai
+            // 
+            this.loopTrangThai.Location = new System.Drawing.Point(320, 2);
+            this.loopTrangThai.Name = "loopTrangThai";
+            this.loopTrangThai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.loopTrangThai.Properties.NullText = "";
+            this.loopTrangThai.Size = new System.Drawing.Size(218, 20);
+            this.loopTrangThai.StyleController = this.layoutControl1;
+            this.loopTrangThai.TabIndex = 6;
+            // 
+            // txtTenKho
+            // 
+            this.txtTenKho.Location = new System.Drawing.Point(54, 2);
+            this.txtTenKho.Name = "txtTenKho";
+            this.txtTenKho.Size = new System.Drawing.Size(210, 20);
+            this.txtTenKho.StyleController = this.layoutControl1;
+            this.txtTenKho.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -80,14 +116,6 @@
             this.Root.Padding = new DevExpress.XtraLayout.Utils.Padding(0, 0, 0, 0);
             this.Root.Size = new System.Drawing.Size(540, 67);
             this.Root.TextVisible = false;
-            // 
-            // txtTenKho
-            // 
-            this.txtTenKho.Location = new System.Drawing.Point(63, 2);
-            this.txtTenKho.Name = "txtTenKho";
-            this.txtTenKho.Size = new System.Drawing.Size(201, 20);
-            this.txtTenKho.StyleController = this.layoutControl1;
-            this.txtTenKho.TabIndex = 4;
             // 
             // layoutControlItem1
             // 
@@ -106,17 +134,6 @@
             this.emptySpaceItem1.Size = new System.Drawing.Size(540, 17);
             this.emptySpaceItem1.TextSize = new System.Drawing.Size(0, 0);
             // 
-            // loopTrangThai
-            // 
-            this.loopTrangThai.Location = new System.Drawing.Point(329, 2);
-            this.loopTrangThai.Name = "loopTrangThai";
-            this.loopTrangThai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.loopTrangThai.Properties.NullText = "";
-            this.loopTrangThai.Size = new System.Drawing.Size(209, 20);
-            this.loopTrangThai.StyleController = this.layoutControl1;
-            this.loopTrangThai.TabIndex = 6;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.loopTrangThai;
@@ -126,13 +143,6 @@
             this.layoutControlItem3.Text = "Trạng thái";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(49, 13);
             // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Location = new System.Drawing.Point(2, 26);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(451, 22);
-            this.separatorControl1.TabIndex = 7;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.separatorControl1;
@@ -141,16 +151,6 @@
             this.layoutControlItem2.Size = new System.Drawing.Size(455, 26);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(457, 26);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(81, 22);
-            this.btnThem.StyleController = this.layoutControl1;
-            this.btnThem.TabIndex = 8;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // layoutControlItem4
             // 
@@ -168,17 +168,17 @@
             this.ClientSize = new System.Drawing.Size(540, 67);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyKho";
-            this.Text = "frmModifyKho";
+            this.Text = "Modify Kho";
             this.Load += new System.EventHandler(this.frmModifyKho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txtTenKho.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.emptySpaceItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             this.ResumeLayout(false);

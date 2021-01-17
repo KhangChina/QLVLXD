@@ -35,6 +35,7 @@
             this.layoutControl3 = new DevExpress.XtraLayout.LayoutControl();
             this.spLanNhap = new DevExpress.XtraEditors.SpinEdit();
             this.spSoLuong = new DevExpress.XtraEditors.SpinEdit();
+            this.loopVatLieu = new DevExpress.XtraEditors.LookUpEdit();
             this.layoutControlGroup3 = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -54,7 +55,6 @@
             this.layoutControlItem9 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem10 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlGroup2 = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.loopVatLieu = new DevExpress.XtraEditors.LookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
@@ -64,6 +64,7 @@
             this.layoutControl3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.spLanNhap.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.spSoLuong.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopVatLieu.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
@@ -86,7 +87,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopVatLieu.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // layoutControl1
@@ -172,6 +172,17 @@
             this.spSoLuong.Size = new System.Drawing.Size(198, 20);
             this.spSoLuong.StyleController = this.layoutControl3;
             this.spSoLuong.TabIndex = 4;
+            // 
+            // loopVatLieu
+            // 
+            this.loopVatLieu.Location = new System.Drawing.Point(50, 2);
+            this.loopVatLieu.Name = "loopVatLieu";
+            this.loopVatLieu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.loopVatLieu.Properties.NullText = "";
+            this.loopVatLieu.Size = new System.Drawing.Size(198, 20);
+            this.loopVatLieu.StyleController = this.layoutControl3;
+            this.loopVatLieu.TabIndex = 6;
             // 
             // layoutControlGroup3
             // 
@@ -373,17 +384,6 @@
             this.layoutControlGroup2.Size = new System.Drawing.Size(340, 284);
             this.layoutControlGroup2.TextVisible = false;
             // 
-            // loopVatLieu
-            // 
-            this.loopVatLieu.Location = new System.Drawing.Point(50, 2);
-            this.loopVatLieu.Name = "loopVatLieu";
-            this.loopVatLieu.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.loopVatLieu.Properties.NullText = "";
-            this.loopVatLieu.Size = new System.Drawing.Size(198, 20);
-            this.loopVatLieu.StyleController = this.layoutControl3;
-            this.loopVatLieu.TabIndex = 6;
-            // 
             // frmModifyPhieuGiaoNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,7 +391,7 @@
             this.ClientSize = new System.Drawing.Size(667, 154);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyPhieuGiaoNhap";
-            this.Text = "frmModifyPhieuGiaoNhap";
+            this.Text = "Modify Phiếu Giao nhập";
             this.Load += new System.EventHandler(this.frmModifyPhieuGiaoNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
@@ -402,6 +402,7 @@
             this.layoutControl3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.spLanNhap.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.spSoLuong.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopVatLieu.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
@@ -424,7 +425,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlGroup2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopVatLieu.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }

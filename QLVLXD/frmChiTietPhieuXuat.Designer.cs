@@ -194,6 +194,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Hóa Đơn Xuất";
             this.gridColumn2.FieldName = "IDHoaDonXuat";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -201,6 +202,7 @@
             // 
             // colKho
             // 
+            this.colKho.Caption = "Kho";
             this.colKho.ColumnEdit = this.lookKho;
             this.colKho.FieldName = "IDKho";
             this.colKho.Name = "colKho";
@@ -216,6 +218,7 @@
             // 
             // colHH
             // 
+            this.colHH.Caption = "Hàng Hóa";
             this.colHH.ColumnEdit = this.lookHangHoa;
             this.colHH.FieldName = "IDHH";
             this.colHH.Name = "colHH";
@@ -231,6 +234,7 @@
             // 
             // colGiamGia
             // 
+            this.colGiamGia.Caption = "Giảm Giá";
             this.colGiamGia.ColumnEdit = this.lookGiamGia;
             this.colGiamGia.FieldName = "IDGiamGia";
             this.colGiamGia.Name = "colGiamGia";
@@ -246,6 +250,7 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "Số Lượng Xuất";
             this.gridColumn6.FieldName = "SoLuongXuat";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -253,6 +258,7 @@
             // 
             // colDonGia
             // 
+            this.colDonGia.Caption = "Đơn Giá Xuất";
             this.colDonGia.FieldName = "DonGiaXuat";
             this.colDonGia.Name = "colDonGia";
             this.colDonGia.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -264,8 +270,6 @@
             // 
             this.gridColumn8.FieldName = "IDKhoHangHoa";
             this.gridColumn8.Name = "gridColumn8";
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 7;
             // 
             // layoutControlGroup2
             // 
@@ -450,7 +454,7 @@
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmChiTietPhieuXuat";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "frmChiTietPhieuXuat";
+            this.Text = "Chi Tiết Phiếu Xuất";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChiTietPhieuXuat_FormClosing);
             this.Load += new System.EventHandler(this.frmChiTietPhieuXuat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

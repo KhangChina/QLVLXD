@@ -99,6 +99,7 @@
             // 
             // colLoaiVatLieu
             // 
+            this.colLoaiVatLieu.Caption = "Loại";
             this.colLoaiVatLieu.ColumnEdit = this.loopLoaiVatTu;
             this.colLoaiVatLieu.FieldName = "IDMaLoai";
             this.colLoaiVatLieu.Name = "colLoaiVatLieu";
@@ -114,6 +115,7 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "Vật Liệu";
             this.gridColumn3.FieldName = "TenHH";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -121,6 +123,7 @@
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Hình";
             this.gridColumn4.FieldName = "URLHinh";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -128,6 +131,7 @@
             // 
             // colDVT
             // 
+            this.colDVT.Caption = "Đơn Vị";
             this.colDVT.ColumnEdit = this.loopDVT;
             this.colDVT.FieldName = "IDDVT";
             this.colDVT.Name = "colDVT";
@@ -143,6 +147,7 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "Xuất Xứ";
             this.gridColumn6.FieldName = "XuatXu";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -150,6 +155,7 @@
             // 
             // colTrangThai
             // 
+            this.colTrangThai.Caption = "Trạng Thái";
             this.colTrangThai.ColumnEdit = this.loopTrangThai;
             this.colTrangThai.FieldName = "TrangThai";
             this.colTrangThai.Name = "colTrangThai";
@@ -165,6 +171,7 @@
             // 
             // gridColumn8
             // 
+            this.gridColumn8.Caption = "Giá";
             this.gridColumn8.FieldName = "Gia";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.Visible = true;

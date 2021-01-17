@@ -174,6 +174,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -188,17 +192,19 @@
             // 
             // gridColumn1
             // 
+            this.gridColumn1.Caption = "Tên Hóa Đơn";
             this.gridColumn1.FieldName = "TenHD";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 0;
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Ngày Lập Nhập";
             this.gridColumn2.FieldName = "NgayLapNhap";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
             // 
             // gridColumn3
             // 
@@ -206,22 +212,24 @@
             this.gridColumn3.FieldName = "VAT";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.VisibleIndex = 2;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Tổng Giá";
             this.gridColumn4.FieldName = "TongGia";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.VisibleIndex = 3;
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "Trạng Thái";
             this.gridColumn5.ColumnEdit = this.loopTrangThai;
             this.gridColumn5.FieldName = "TrangThai";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.VisibleIndex = 4;
             // 
             // loopTrangThai
             // 
@@ -232,17 +240,16 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "Nhân Viên";
             this.gridColumn6.FieldName = "IDNV";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 6;
+            this.gridColumn6.VisibleIndex = 5;
             // 
             // colID
             // 
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
-            this.colID.Visible = true;
-            this.colID.VisibleIndex = 0;
             // 
             // usNhapVatLieu
             // 

@@ -181,7 +181,7 @@
             this.ClientSize = new System.Drawing.Size(642, 183);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyLoaiVatLieu";
-            this.Text = "frmModifyLoaiVatLieu";
+            this.Text = "Modify Loại Vật Liệu";
             this.Load += new System.EventHandler(this.frmModifyLoaiVatLieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

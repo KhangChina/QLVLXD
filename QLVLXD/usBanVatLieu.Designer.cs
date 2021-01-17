@@ -182,6 +182,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.colKH,
@@ -199,23 +203,23 @@
             // 
             this.gridColumn1.FieldName = "ID";
             this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 0;
             // 
             // colKH
             // 
+            this.colKH.Caption = "Tên Khách Hàng";
             this.colKH.FieldName = "IDKH";
             this.colKH.Name = "colKH";
             this.colKH.Visible = true;
-            this.colKH.VisibleIndex = 2;
+            this.colKH.VisibleIndex = 1;
             // 
             // colNV
             // 
+            this.colNV.Caption = "Nhân Viên";
             this.colNV.ColumnEdit = this.lookNV;
             this.colNV.FieldName = "IDNV";
             this.colNV.Name = "colNV";
             this.colNV.Visible = true;
-            this.colNV.VisibleIndex = 3;
+            this.colNV.VisibleIndex = 2;
             // 
             // lookNV
             // 
@@ -231,18 +235,20 @@
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "Ngày Lập Xuất";
             this.gridColumn5.FieldName = "NgayLapXuat";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.VisibleIndex = 4;
             // 
             // colTrangThai
             // 
+            this.colTrangThai.Caption = "Trạng Thái Xuất";
             this.colTrangThai.ColumnEdit = this.lookTrangThai;
             this.colTrangThai.FieldName = "TrangThaiXuat";
             this.colTrangThai.Name = "colTrangThai";
             this.colTrangThai.Visible = true;
-            this.colTrangThai.VisibleIndex = 6;
+            this.colTrangThai.VisibleIndex = 5;
             // 
             // lookTrangThai
             // 
@@ -253,17 +259,19 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Tên Hóa Đơn";
             this.gridColumn2.FieldName = "TenHD";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.VisibleIndex = 0;
             // 
             // colTongGia
             // 
+            this.colTongGia.Caption = "Tổng Giá";
             this.colTongGia.FieldName = "TongGia";
             this.colTongGia.Name = "colTongGia";
             this.colTongGia.Visible = true;
-            this.colTongGia.VisibleIndex = 4;
+            this.colTongGia.VisibleIndex = 3;
             // 
             // lookKH
             // 

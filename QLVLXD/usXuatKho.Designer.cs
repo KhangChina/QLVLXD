@@ -34,6 +34,7 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnTaoPhieuXuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnListPhieuXuat = new DevExpress.XtraBars.BarButtonItem();
+            this.btnXuatHoaDonXuat = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -53,7 +54,6 @@
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colTongGia = new DevExpress.XtraGrid.Columns.GridColumn();
             this.lookKH = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.btnXuatHoaDonXuat = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -113,6 +113,15 @@
             this.btnListPhieuXuat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnListPhieuXuat.ImageOptions.LargeImage")));
             this.btnListPhieuXuat.Name = "btnListPhieuXuat";
             this.btnListPhieuXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            // 
+            // btnXuatHoaDonXuat
+            // 
+            this.btnXuatHoaDonXuat.Caption = "Xuất Hóa Đơn Xuất";
+            this.btnXuatHoaDonXuat.Id = 4;
+            this.btnXuatHoaDonXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnXuatHoaDonXuat.ImageOptions.Image")));
+            this.btnXuatHoaDonXuat.Name = "btnXuatHoaDonXuat";
+            this.btnXuatHoaDonXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnXuatHoaDonXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXuatHoaDonXuat_ItemClick);
             // 
             // btnLamMoi
             // 
@@ -180,6 +189,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.colID,
             this.colKH,
@@ -202,6 +215,7 @@
             // 
             // colKH
             // 
+            this.colKH.Caption = "Khách Hàng";
             this.colKH.FieldName = "IDKH";
             this.colKH.Name = "colKH";
             this.colKH.Visible = true;
@@ -209,6 +223,7 @@
             // 
             // colNV
             // 
+            this.colNV.Caption = "Nhân Viên";
             this.colNV.ColumnEdit = this.lookNV;
             this.colNV.FieldName = "IDNV";
             this.colNV.Name = "colNV";
@@ -229,6 +244,7 @@
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "Ngày Lập Xuất";
             this.gridColumn5.FieldName = "NgayLapXuat";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -236,6 +252,7 @@
             // 
             // colTrangThai
             // 
+            this.colTrangThai.Caption = "Trạng Thái Xuất";
             this.colTrangThai.ColumnEdit = this.lookTrangThai;
             this.colTrangThai.FieldName = "TrangThaiXuat";
             this.colTrangThai.Name = "colTrangThai";
@@ -251,6 +268,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Tên Hóa Đơn";
             this.gridColumn2.FieldName = "TenHD";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -258,6 +276,7 @@
             // 
             // colTongGia
             // 
+            this.colTongGia.Caption = "Tổng Giá";
             this.colTongGia.FieldName = "TongGia";
             this.colTongGia.Name = "colTongGia";
             this.colTongGia.Visible = true;
@@ -269,15 +288,6 @@
             this.lookKH.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.lookKH.Name = "lookKH";
-            // 
-            // btnXuatHoaDonXuat
-            // 
-            this.btnXuatHoaDonXuat.Caption = "Xuất Hóa Đơn Xuất";
-            this.btnXuatHoaDonXuat.Id = 4;
-            this.btnXuatHoaDonXuat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnXuatHoaDonXuat.Name = "btnXuatHoaDonXuat";
-            this.btnXuatHoaDonXuat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnXuatHoaDonXuat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnXuatHoaDonXuat_ItemClick);
             // 
             // usXuatKho
             // 

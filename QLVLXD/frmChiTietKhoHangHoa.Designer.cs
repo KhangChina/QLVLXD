@@ -45,13 +45,13 @@
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
-            this.btnThemKhoHangHoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnCapNhatKhoHangHoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnXoaKhoHangHoa = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
+            this.btnThemKhoHangHoa = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
@@ -109,6 +109,7 @@
             // 
             // colKho
             // 
+            this.colKho.Caption = "Kho";
             this.colKho.ColumnEdit = this.lookKho;
             this.colKho.FieldName = "IDKho";
             this.colKho.Name = "colKho";
@@ -124,6 +125,7 @@
             // 
             // colHH
             // 
+            this.colHH.Caption = "Hàng Hóa";
             this.colHH.ColumnEdit = this.lookHH;
             this.colHH.FieldName = "IDHH";
             this.colHH.Name = "colHH";
@@ -139,6 +141,7 @@
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Số Lô";
             this.gridColumn4.FieldName = "SoLo";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -146,6 +149,7 @@
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "Hạn Sử Dụng";
             this.gridColumn5.FieldName = "HanSuDung";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
@@ -153,6 +157,7 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "Số Lượng Tồn";
             this.gridColumn6.FieldName = "SoLuongTon";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
@@ -207,15 +212,6 @@
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
             // 
-            // btnThemKhoHangHoa
-            // 
-            this.btnThemKhoHangHoa.Caption = "Thêm Vật Liệu Vào Kho";
-            this.btnThemKhoHangHoa.Id = 0;
-            this.btnThemKhoHangHoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThemKhoHangHoa.ImageOptions.Image")));
-            this.btnThemKhoHangHoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThemKhoHangHoa.ImageOptions.LargeImage")));
-            this.btnThemKhoHangHoa.Name = "btnThemKhoHangHoa";
-            this.btnThemKhoHangHoa.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            // 
             // btnCapNhatKhoHangHoa
             // 
             this.btnCapNhatKhoHangHoa.Caption = "Cập Nhật Vật Liệu";
@@ -267,6 +263,15 @@
             this.barDockControlRight.Location = new System.Drawing.Point(1068, 24);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 727);
+            // 
+            // btnThemKhoHangHoa
+            // 
+            this.btnThemKhoHangHoa.Caption = "Thêm Vật Liệu Vào Kho";
+            this.btnThemKhoHangHoa.Id = 0;
+            this.btnThemKhoHangHoa.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThemKhoHangHoa.ImageOptions.Image")));
+            this.btnThemKhoHangHoa.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThemKhoHangHoa.ImageOptions.LargeImage")));
+            this.btnThemKhoHangHoa.Name = "btnThemKhoHangHoa";
+            this.btnThemKhoHangHoa.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             // 
             // frmChiTietKhoHangHoa
             // 

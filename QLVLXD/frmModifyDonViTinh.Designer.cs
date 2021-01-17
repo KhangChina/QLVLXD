@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtTenDonViTinh = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.txtTenDonViTinh = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDonViTinh.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDonViTinh.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             this.SuspendLayout();
@@ -59,6 +59,31 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(442, 26);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(80, 22);
+            this.btnThem.StyleController = this.layoutControl1;
+            this.btnThem.TabIndex = 6;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(2, 26);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(436, 23);
+            this.separatorControl1.TabIndex = 5;
+            // 
+            // txtTenDonViTinh
+            // 
+            this.txtTenDonViTinh.Location = new System.Drawing.Point(80, 2);
+            this.txtTenDonViTinh.Name = "txtTenDonViTinh";
+            this.txtTenDonViTinh.Size = new System.Drawing.Size(442, 20);
+            this.txtTenDonViTinh.StyleController = this.layoutControl1;
+            this.txtTenDonViTinh.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -72,14 +97,6 @@
             this.Root.Size = new System.Drawing.Size(524, 51);
             this.Root.TextVisible = false;
             // 
-            // txtTenDonViTinh
-            // 
-            this.txtTenDonViTinh.Location = new System.Drawing.Point(89, 2);
-            this.txtTenDonViTinh.Name = "txtTenDonViTinh";
-            this.txtTenDonViTinh.Size = new System.Drawing.Size(433, 20);
-            this.txtTenDonViTinh.StyleController = this.layoutControl1;
-            this.txtTenDonViTinh.TabIndex = 4;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txtTenDonViTinh;
@@ -89,13 +106,6 @@
             this.layoutControlItem1.Text = "Tên Đơn Vị Tính";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(75, 13);
             // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Location = new System.Drawing.Point(2, 26);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(436, 23);
-            this.separatorControl1.TabIndex = 5;
-            // 
             // layoutControlItem2
             // 
             this.layoutControlItem2.Control = this.separatorControl1;
@@ -104,16 +114,6 @@
             this.layoutControlItem2.Size = new System.Drawing.Size(440, 27);
             this.layoutControlItem2.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem2.TextVisible = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(442, 26);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(80, 22);
-            this.btnThem.StyleController = this.layoutControl1;
-            this.btnThem.TabIndex = 6;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // layoutControlItem3
             // 
@@ -131,13 +131,13 @@
             this.ClientSize = new System.Drawing.Size(524, 51);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyDonViTinh";
-            this.Text = "frmModifyDonViTinh";
+            this.Text = "Modify  Đơn Vị  Tính";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTenDonViTinh.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTenDonViTinh.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             this.ResumeLayout(false);

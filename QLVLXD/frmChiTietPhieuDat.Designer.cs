@@ -202,6 +202,7 @@
             // 
             // colIDHH
             // 
+            this.colIDHH.Caption = "Hàng Hóa";
             this.colIDHH.ColumnEdit = this.loopVatLieu;
             this.colIDHH.FieldName = "IDHH";
             this.colIDHH.Name = "colIDHH";
@@ -217,6 +218,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Số Lượng Nhập";
             this.gridColumn2.FieldName = "SoLuongNhap";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -224,6 +226,7 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "Đơn Gía Nhập";
             this.gridColumn3.FieldName = "DonGiaNhap";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -231,6 +234,7 @@
             // 
             // colTongGia
             // 
+            this.colTongGia.Caption = "Tổng Giá";
             this.colTongGia.FieldName = "TongGia";
             this.colTongGia.Name = "colTongGia";
             this.colTongGia.Summary.AddRange(new DevExpress.XtraGrid.GridSummaryItem[] {
@@ -240,6 +244,7 @@
             // 
             // colIDNCC
             // 
+            this.colIDNCC.Caption = "Nhà Cung Cấp";
             this.colIDNCC.ColumnEdit = this.loopNCC;
             this.colIDNCC.FieldName = "IDNCC";
             this.colIDNCC.Name = "colIDNCC";
@@ -255,6 +260,7 @@
             // 
             // colGiamGia
             // 
+            this.colGiamGia.Caption = "Giảm Giá";
             this.colGiamGia.ColumnEdit = this.loopGiamGia;
             this.colGiamGia.FieldName = "IDGiamGia";
             this.colGiamGia.Name = "colGiamGia";
@@ -464,7 +470,7 @@
             this.ClientSize = new System.Drawing.Size(896, 716);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmChiTietPhieuDat";
-            this.Text = "frmChiTietPhieuDat";
+            this.Text = "Chi Tiết Phiếu Đặt";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmChiTietPhieuDat_FormClosing);
             this.Load += new System.EventHandler(this.frmChiTietPhieuDat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

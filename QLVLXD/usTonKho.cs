@@ -8,6 +8,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using DevExpress.XtraGrid.Views.Grid;
 
 namespace QLVLXD
 {
@@ -75,6 +76,20 @@ namespace QLVLXD
         {
             frmModifyKhoHangHoa frm = new frmModifyKhoHangHoa();
             frm.ShowDialog();
+        }
+
+        private void grv_RowStyle(object sender, DevExpress.XtraGrid.Views.Grid.RowStyleEventArgs e)
+        {
+            GridView View = sender as GridView;
+            if (e.RowHandle >= 0)
+            {
+                int  priority = int.Parse(View.GetRowCellDisplayText(e.RowHandle, View.Columns["Tong"]));
+                if (priority <= 5)
+                {
+                    e.Appearance.BackColor = Color.FromArgb(150, Color.LightCoral);
+                    e.Appearance.BackColor2 = Color.Red;
+                }
+            }
         }
     }
 }

@@ -157,6 +157,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -175,6 +179,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Tên Nhà Cung Cấp";
             this.gridColumn2.FieldName = "TenNCC";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -182,6 +187,7 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "Địa Chỉ";
             this.gridColumn3.FieldName = "DiaChi";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
@@ -189,6 +195,7 @@
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Số Điện Thoại";
             this.gridColumn4.FieldName = "SDT";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;

@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(usTonKho));
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
+            this.btnThemVatLieuVaoKho = new DevExpress.XtraBars.BarButtonItem();
             this.btnXemChiTietHangHoa = new DevExpress.XtraBars.BarButtonItem();
             this.btnLamMoi = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
@@ -47,7 +48,6 @@
             this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIDDVT = new DevExpress.XtraGrid.Columns.GridColumn();
             this.loopIDDVT = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
-            this.btnThemVatLieuVaoKho = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -85,6 +85,16 @@
             this.bar2.OptionsBar.MultiLine = true;
             this.bar2.OptionsBar.UseWholeRow = true;
             this.bar2.Text = "Main menu";
+            // 
+            // btnThemVatLieuVaoKho
+            // 
+            this.btnThemVatLieuVaoKho.Caption = "Thêm Vật Liệu Vào Kho";
+            this.btnThemVatLieuVaoKho.Id = 2;
+            this.btnThemVatLieuVaoKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnThemVatLieuVaoKho.ImageOptions.Image")));
+            this.btnThemVatLieuVaoKho.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnThemVatLieuVaoKho.ImageOptions.LargeImage")));
+            this.btnThemVatLieuVaoKho.Name = "btnThemVatLieuVaoKho";
+            this.btnThemVatLieuVaoKho.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnThemVatLieuVaoKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThemVatLieuVaoKho_ItemClick);
             // 
             // btnXemChiTietHangHoa
             // 
@@ -164,9 +174,11 @@
             this.grv.GridControl = this.grc;
             this.grv.Name = "grv";
             this.grv.OptionsView.ShowGroupPanel = false;
+            this.grv.RowStyle += new DevExpress.XtraGrid.Views.Grid.RowStyleEventHandler(this.grv_RowStyle);
             // 
             // colIDKho
             // 
+            this.colIDKho.Caption = "Kho ";
             this.colIDKho.ColumnEdit = this.loopIDKho;
             this.colIDKho.FieldName = "IDKho";
             this.colIDKho.Name = "colIDKho";
@@ -182,6 +194,7 @@
             // 
             // colIDHH
             // 
+            this.colIDHH.Caption = "Vật Liệu";
             this.colIDHH.ColumnEdit = this.loopIDHH;
             this.colIDHH.FieldName = "IDHH";
             this.colIDHH.Name = "colIDHH";
@@ -197,6 +210,7 @@
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Tổng";
             this.gridColumn4.FieldName = "Tong";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
@@ -204,6 +218,7 @@
             // 
             // colIDDVT
             // 
+            this.colIDDVT.Caption = "Đơn Vị Tính";
             this.colIDDVT.ColumnEdit = this.loopIDDVT;
             this.colIDDVT.FieldName = "IDDVT";
             this.colIDDVT.Name = "colIDDVT";
@@ -216,16 +231,6 @@
             this.loopIDDVT.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
             new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
             this.loopIDDVT.Name = "loopIDDVT";
-            // 
-            // btnThemVatLieuVaoKho
-            // 
-            this.btnThemVatLieuVaoKho.Caption = "Thêm Vật Liệu Vào Kho";
-            this.btnThemVatLieuVaoKho.Id = 2;
-            this.btnThemVatLieuVaoKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.btnThemVatLieuVaoKho.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.btnThemVatLieuVaoKho.Name = "btnThemVatLieuVaoKho";
-            this.btnThemVatLieuVaoKho.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnThemVatLieuVaoKho.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnThemVatLieuVaoKho_ItemClick);
             // 
             // usTonKho
             // 

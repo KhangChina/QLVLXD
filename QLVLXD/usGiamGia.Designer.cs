@@ -35,6 +35,7 @@
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.loopTrangThai = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnThem = new DevExpress.XtraBars.BarButtonItem();
@@ -44,11 +45,10 @@
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.loopTrangThai = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             this.SuspendLayout();
             // 
             // grc
@@ -66,6 +66,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -83,6 +87,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Chỉ Số Giảm Giá";
             this.gridColumn2.FieldName = "PhanTram";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
@@ -90,11 +95,19 @@
             // 
             // gridColumn3
             // 
+            this.gridColumn3.Caption = "Trạng Thái";
             this.gridColumn3.ColumnEdit = this.loopTrangThai;
             this.gridColumn3.FieldName = "TrangThai";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
             this.gridColumn3.VisibleIndex = 2;
+            // 
+            // loopTrangThai
+            // 
+            this.loopTrangThai.AutoHeight = false;
+            this.loopTrangThai.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.loopTrangThai.Name = "loopTrangThai";
             // 
             // barManager1
             // 
@@ -188,13 +201,6 @@
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 428);
             // 
-            // loopTrangThai
-            // 
-            this.loopTrangThai.AutoHeight = false;
-            this.loopTrangThai.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.loopTrangThai.Name = "loopTrangThai";
-            // 
             // usGiamGia
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -209,8 +215,8 @@
             this.Load += new System.EventHandler(this.usGiamGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.grc)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

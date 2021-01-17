@@ -29,28 +29,28 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtTen = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.NgayLap = new DevExpress.XtraEditors.DateEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtVAT = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnTao = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.txtVAT = new DevExpress.XtraEditors.TextEdit();
+            this.NgayLap = new DevExpress.XtraEditors.DateEdit();
+            this.txtTen = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NgayLap.Properties.CalendarTimeProperties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NgayLap.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             this.SuspendLayout();
@@ -70,6 +70,52 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnTao
+            // 
+            this.btnTao.Location = new System.Drawing.Point(325, 50);
+            this.btnTao.Name = "btnTao";
+            this.btnTao.Size = new System.Drawing.Size(98, 22);
+            this.btnTao.StyleController = this.layoutControl1;
+            this.btnTao.TabIndex = 9;
+            this.btnTao.Text = "Tạo";
+            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(2, 50);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(319, 22);
+            this.separatorControl1.TabIndex = 8;
+            // 
+            // txtVAT
+            // 
+            this.txtVAT.Location = new System.Drawing.Point(68, 26);
+            this.txtVAT.Name = "txtVAT";
+            this.txtVAT.Size = new System.Drawing.Size(355, 20);
+            this.txtVAT.StyleController = this.layoutControl1;
+            this.txtVAT.TabIndex = 7;
+            // 
+            // NgayLap
+            // 
+            this.NgayLap.EditValue = null;
+            this.NgayLap.Location = new System.Drawing.Point(298, 2);
+            this.NgayLap.Name = "NgayLap";
+            this.NgayLap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.NgayLap.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.NgayLap.Size = new System.Drawing.Size(125, 20);
+            this.NgayLap.StyleController = this.layoutControl1;
+            this.NgayLap.TabIndex = 5;
+            // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(68, 2);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(160, 20);
+            this.txtTen.StyleController = this.layoutControl1;
+            this.txtTen.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -85,14 +131,6 @@
             this.Root.Size = new System.Drawing.Size(425, 74);
             this.Root.TextVisible = false;
             // 
-            // txtTen
-            // 
-            this.txtTen.Location = new System.Drawing.Point(77, 2);
-            this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(151, 20);
-            this.txtTen.StyleController = this.layoutControl1;
-            this.txtTen.TabIndex = 4;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txtTen;
@@ -101,19 +139,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(230, 24);
             this.layoutControlItem1.Text = "Tên Hóa Đơn";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(63, 13);
-            // 
-            // NgayLap
-            // 
-            this.NgayLap.EditValue = null;
-            this.NgayLap.Location = new System.Drawing.Point(307, 2);
-            this.NgayLap.Name = "NgayLap";
-            this.NgayLap.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.NgayLap.Properties.CalendarTimeProperties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.NgayLap.Size = new System.Drawing.Size(116, 20);
-            this.NgayLap.StyleController = this.layoutControl1;
-            this.NgayLap.TabIndex = 5;
             // 
             // layoutControlItem2
             // 
@@ -124,14 +149,6 @@
             this.layoutControlItem2.Text = "Ngày Lập";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // txtVAT
-            // 
-            this.txtVAT.Location = new System.Drawing.Point(77, 26);
-            this.txtVAT.Name = "txtVAT";
-            this.txtVAT.Size = new System.Drawing.Size(346, 20);
-            this.txtVAT.StyleController = this.layoutControl1;
-            this.txtVAT.TabIndex = 7;
-            // 
             // layoutControlItem4
             // 
             this.layoutControlItem4.Control = this.txtVAT;
@@ -141,13 +158,6 @@
             this.layoutControlItem4.Text = "VAT";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(63, 13);
             // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Location = new System.Drawing.Point(2, 50);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(319, 22);
-            this.separatorControl1.TabIndex = 8;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.separatorControl1;
@@ -156,16 +166,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(323, 26);
             this.layoutControlItem3.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem3.TextVisible = false;
-            // 
-            // btnTao
-            // 
-            this.btnTao.Location = new System.Drawing.Point(325, 50);
-            this.btnTao.Name = "btnTao";
-            this.btnTao.Size = new System.Drawing.Size(98, 22);
-            this.btnTao.StyleController = this.layoutControl1;
-            this.btnTao.TabIndex = 9;
-            this.btnTao.Text = "Tạo";
-            this.btnTao.Click += new System.EventHandler(this.btnTao_Click);
             // 
             // layoutControlItem5
             // 
@@ -183,18 +183,18 @@
             this.ClientSize = new System.Drawing.Size(425, 74);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyDatVatLieu";
-            this.Text = "frmModifyDatVatLieu";
+            this.Text = "Modify Đặt  Vật Liệu";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NgayLap.Properties.CalendarTimeProperties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NgayLap.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtTen.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtVAT.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             this.ResumeLayout(false);

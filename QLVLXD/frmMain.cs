@@ -213,5 +213,7 @@ namespace QLVLXD
             }
             usBanChay.Instance.BringToFront();
         }
+
+       
     }
 }

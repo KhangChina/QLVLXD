@@ -102,8 +102,8 @@
             // 
             this.btnCapNhat.Caption = "Cập nhật";
             this.btnCapNhat.Id = 2;
-            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.Image")));
-            this.btnCapNhat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem3.ImageOptions.LargeImage")));
+            this.btnCapNhat.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.Image")));
+            this.btnCapNhat.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnCapNhat.ImageOptions.LargeImage")));
             this.btnCapNhat.Name = "btnCapNhat";
             this.btnCapNhat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnCapNhat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnCapNhat_ItemClick);
@@ -170,6 +170,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Tên";
             this.gridColumn2.FieldName = "Ten";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;

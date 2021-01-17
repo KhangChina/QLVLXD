@@ -34,7 +34,6 @@
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnTaoPhieu = new DevExpress.XtraBars.BarButtonItem();
             this.btnChiTietPhieuDat = new DevExpress.XtraBars.BarButtonItem();
-            this.btnDuyet = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
@@ -43,6 +42,8 @@
             this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem4 = new DevExpress.XtraBars.BarButtonItem();
+            this.btnDuyet = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             this.grc = new DevExpress.XtraGrid.GridControl();
             this.grv = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
@@ -53,7 +54,6 @@
             this.loopTrangThai = new DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit();
             this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.barButtonItem5 = new DevExpress.XtraBars.BarButtonItem();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grc)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grv)).BeginInit();
@@ -115,16 +115,6 @@
             this.btnChiTietPhieuDat.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnChiTietPhieuDat.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnChiTietPhieuDat_ItemClick);
             // 
-            // btnDuyet
-            // 
-            this.btnDuyet.Caption = "Duyệt";
-            this.btnDuyet.Id = 5;
-            this.btnDuyet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuyet.ImageOptions.Image")));
-            this.btnDuyet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuyet.ImageOptions.LargeImage")));
-            this.btnDuyet.Name = "btnDuyet";
-            this.btnDuyet.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnDuyet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDuyet_ItemClick);
-            // 
             // barButtonItem1
             // 
             this.barButtonItem1.Caption = "Làm mới";
@@ -184,6 +174,22 @@
             this.barButtonItem4.Id = 3;
             this.barButtonItem4.Name = "barButtonItem4";
             // 
+            // btnDuyet
+            // 
+            this.btnDuyet.Caption = "Duyệt";
+            this.btnDuyet.Id = 5;
+            this.btnDuyet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnDuyet.ImageOptions.Image")));
+            this.btnDuyet.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnDuyet.ImageOptions.LargeImage")));
+            this.btnDuyet.Name = "btnDuyet";
+            this.btnDuyet.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnDuyet.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnDuyet_ItemClick);
+            // 
+            // barButtonItem5
+            // 
+            this.barButtonItem5.Caption = "Xuất Hóa Đơn Đặc";
+            this.barButtonItem5.Id = 7;
+            this.barButtonItem5.Name = "barButtonItem5";
+            // 
             // grc
             // 
             this.grc.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -200,6 +206,10 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
+            this.grv.Appearance.HeaderPanel.Options.UseTextOptions = true;
+            this.grv.Appearance.HeaderPanel.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2,
@@ -214,17 +224,19 @@
             // 
             // gridColumn1
             // 
+            this.gridColumn1.Caption = "Tên Hóa Đơn";
             this.gridColumn1.FieldName = "TenHD";
             this.gridColumn1.Name = "gridColumn1";
             this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 1;
+            this.gridColumn1.VisibleIndex = 0;
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Ngày Lập Nhập";
             this.gridColumn2.FieldName = "NgayLapNhap";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;
-            this.gridColumn2.VisibleIndex = 2;
+            this.gridColumn2.VisibleIndex = 1;
             // 
             // gridColumn3
             // 
@@ -232,22 +244,24 @@
             this.gridColumn3.FieldName = "VAT";
             this.gridColumn3.Name = "gridColumn3";
             this.gridColumn3.Visible = true;
-            this.gridColumn3.VisibleIndex = 3;
+            this.gridColumn3.VisibleIndex = 2;
             // 
             // gridColumn4
             // 
+            this.gridColumn4.Caption = "Tổng Giá";
             this.gridColumn4.FieldName = "TongGia";
             this.gridColumn4.Name = "gridColumn4";
             this.gridColumn4.Visible = true;
-            this.gridColumn4.VisibleIndex = 4;
+            this.gridColumn4.VisibleIndex = 3;
             // 
             // gridColumn5
             // 
+            this.gridColumn5.Caption = "Trạng Thái";
             this.gridColumn5.ColumnEdit = this.loopTrangThai;
             this.gridColumn5.FieldName = "TrangThai";
             this.gridColumn5.Name = "gridColumn5";
             this.gridColumn5.Visible = true;
-            this.gridColumn5.VisibleIndex = 5;
+            this.gridColumn5.VisibleIndex = 4;
             // 
             // loopTrangThai
             // 
@@ -258,23 +272,16 @@
             // 
             // gridColumn6
             // 
+            this.gridColumn6.Caption = "Tên Nhân Viên";
             this.gridColumn6.FieldName = "IDNV";
             this.gridColumn6.Name = "gridColumn6";
             this.gridColumn6.Visible = true;
-            this.gridColumn6.VisibleIndex = 6;
+            this.gridColumn6.VisibleIndex = 5;
             // 
             // colID
             // 
             this.colID.FieldName = "ID";
             this.colID.Name = "colID";
-            this.colID.Visible = true;
-            this.colID.VisibleIndex = 0;
-            // 
-            // barButtonItem5
-            // 
-            this.barButtonItem5.Caption = "Xuất Hóa Đơn Đặc";
-            this.barButtonItem5.Id = 7;
-            this.barButtonItem5.Name = "barButtonItem5";
             // 
             // usDatVatLieu
             // 

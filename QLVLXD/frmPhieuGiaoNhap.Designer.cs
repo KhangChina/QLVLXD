@@ -38,11 +38,11 @@
             this.barManager2 = new DevExpress.XtraBars.BarManager(this.components);
             this.bar2 = new DevExpress.XtraBars.Bar();
             this.btnTaoPhieuGiaoNhap = new DevExpress.XtraBars.BarButtonItem();
-            this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControl1 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl2 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl3 = new DevExpress.XtraBars.BarDockControl();
             this.barDockControl4 = new DevExpress.XtraBars.BarDockControl();
+            this.btnUpdate = new DevExpress.XtraBars.BarButtonItem();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.groupControl2 = new DevExpress.XtraEditors.GroupControl();
             this.grcPhieuNhap = new DevExpress.XtraGrid.GridControl();
@@ -167,16 +167,6 @@
             this.btnTaoPhieuGiaoNhap.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
             this.btnTaoPhieuGiaoNhap.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnTaoPhieuGiaoNhap_ItemClick);
             // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Caption = "Đã Nhập Toàn Bộ Vật Liệu";
-            this.btnUpdate.Id = 1;
-            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
-            this.btnUpdate.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.LargeImage")));
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
-            this.btnUpdate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpdate_ItemClick);
-            // 
             // barDockControl1
             // 
             this.barDockControl1.CausesValidation = false;
@@ -208,6 +198,16 @@
             this.barDockControl4.Location = new System.Drawing.Point(1013, 24);
             this.barDockControl4.Manager = this.barManager2;
             this.barDockControl4.Size = new System.Drawing.Size(0, 571);
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Caption = "Đã Nhập Toàn Bộ Vật Liệu";
+            this.btnUpdate.Id = 1;
+            this.btnUpdate.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.Image")));
+            this.btnUpdate.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("btnUpdate.ImageOptions.LargeImage")));
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.PaintStyle = DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph;
+            this.btnUpdate.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.btnUpdate_ItemClick);
             // 
             // layoutControl1
             // 
@@ -470,7 +470,7 @@
             this.Controls.Add(this.barDockControl2);
             this.Controls.Add(this.barDockControl1);
             this.Name = "frmPhieuGiaoNhap";
-            this.Text = "frmPhieuGiaoNhap";
+            this.Text = "Phiếu Giao Nhập";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPhieuGiaoNhap_FormClosing);
             this.Load += new System.EventHandler(this.frmPhieuGiaoNhap_Load);
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).EndInit();

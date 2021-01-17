@@ -29,31 +29,31 @@
         private void InitializeComponent()
         {
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
-            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
-            this.txtKhachHang = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.txtDienThoai = new DevExpress.XtraEditors.TextEdit();
-            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.loopTrangThai = new DevExpress.XtraEditors.LookUpEdit();
-            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
-            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.btnThem = new DevExpress.XtraEditors.SimpleButton();
+            this.separatorControl1 = new DevExpress.XtraEditors.SeparatorControl();
+            this.loopTrangThai = new DevExpress.XtraEditors.LookUpEdit();
+            this.txtDienThoai = new DevExpress.XtraEditors.TextEdit();
+            this.txtDiaChi = new DevExpress.XtraEditors.TextEdit();
+            this.txtKhachHang = new DevExpress.XtraEditors.TextEdit();
+            this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
+            this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem3 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
+            this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKhachHang.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhachHang.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             this.SuspendLayout();
@@ -74,6 +74,57 @@
             this.layoutControl1.TabIndex = 0;
             this.layoutControl1.Text = "layoutControl1";
             // 
+            // btnThem
+            // 
+            this.btnThem.Location = new System.Drawing.Point(339, 98);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(91, 22);
+            this.btnThem.StyleController = this.layoutControl1;
+            this.btnThem.TabIndex = 9;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
+            // 
+            // separatorControl1
+            // 
+            this.separatorControl1.Location = new System.Drawing.Point(2, 98);
+            this.separatorControl1.Name = "separatorControl1";
+            this.separatorControl1.Size = new System.Drawing.Size(333, 24);
+            this.separatorControl1.TabIndex = 8;
+            // 
+            // loopTrangThai
+            // 
+            this.loopTrangThai.Location = new System.Drawing.Point(81, 74);
+            this.loopTrangThai.Name = "loopTrangThai";
+            this.loopTrangThai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.loopTrangThai.Size = new System.Drawing.Size(349, 20);
+            this.loopTrangThai.StyleController = this.layoutControl1;
+            this.loopTrangThai.TabIndex = 7;
+            // 
+            // txtDienThoai
+            // 
+            this.txtDienThoai.Location = new System.Drawing.Point(81, 50);
+            this.txtDienThoai.Name = "txtDienThoai";
+            this.txtDienThoai.Size = new System.Drawing.Size(349, 20);
+            this.txtDienThoai.StyleController = this.layoutControl1;
+            this.txtDienThoai.TabIndex = 6;
+            // 
+            // txtDiaChi
+            // 
+            this.txtDiaChi.Location = new System.Drawing.Point(81, 26);
+            this.txtDiaChi.Name = "txtDiaChi";
+            this.txtDiaChi.Size = new System.Drawing.Size(349, 20);
+            this.txtDiaChi.StyleController = this.layoutControl1;
+            this.txtDiaChi.TabIndex = 5;
+            // 
+            // txtKhachHang
+            // 
+            this.txtKhachHang.Location = new System.Drawing.Point(81, 2);
+            this.txtKhachHang.Name = "txtKhachHang";
+            this.txtKhachHang.Size = new System.Drawing.Size(349, 20);
+            this.txtKhachHang.StyleController = this.layoutControl1;
+            this.txtKhachHang.TabIndex = 4;
+            // 
             // Root
             // 
             this.Root.EnableIndentsWithoutBorders = DevExpress.Utils.DefaultBoolean.True;
@@ -90,14 +141,6 @@
             this.Root.Size = new System.Drawing.Size(432, 124);
             this.Root.TextVisible = false;
             // 
-            // txtKhachHang
-            // 
-            this.txtKhachHang.Location = new System.Drawing.Point(90, 2);
-            this.txtKhachHang.Name = "txtKhachHang";
-            this.txtKhachHang.Size = new System.Drawing.Size(340, 20);
-            this.txtKhachHang.StyleController = this.layoutControl1;
-            this.txtKhachHang.TabIndex = 4;
-            // 
             // layoutControlItem1
             // 
             this.layoutControlItem1.Control = this.txtKhachHang;
@@ -106,14 +149,6 @@
             this.layoutControlItem1.Size = new System.Drawing.Size(432, 24);
             this.layoutControlItem1.Text = "Tên khách hàng";
             this.layoutControlItem1.TextSize = new System.Drawing.Size(76, 13);
-            // 
-            // txtDiaChi
-            // 
-            this.txtDiaChi.Location = new System.Drawing.Point(90, 26);
-            this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(340, 20);
-            this.txtDiaChi.StyleController = this.layoutControl1;
-            this.txtDiaChi.TabIndex = 5;
             // 
             // layoutControlItem2
             // 
@@ -124,14 +159,6 @@
             this.layoutControlItem2.Text = "Địa chỉ";
             this.layoutControlItem2.TextSize = new System.Drawing.Size(76, 13);
             // 
-            // txtDienThoai
-            // 
-            this.txtDienThoai.Location = new System.Drawing.Point(90, 50);
-            this.txtDienThoai.Name = "txtDienThoai";
-            this.txtDienThoai.Size = new System.Drawing.Size(340, 20);
-            this.txtDienThoai.StyleController = this.layoutControl1;
-            this.txtDienThoai.TabIndex = 6;
-            // 
             // layoutControlItem3
             // 
             this.layoutControlItem3.Control = this.txtDienThoai;
@@ -140,16 +167,6 @@
             this.layoutControlItem3.Size = new System.Drawing.Size(432, 24);
             this.layoutControlItem3.Text = "Số điện thoại";
             this.layoutControlItem3.TextSize = new System.Drawing.Size(76, 13);
-            // 
-            // loopTrangThai
-            // 
-            this.loopTrangThai.Location = new System.Drawing.Point(90, 74);
-            this.loopTrangThai.Name = "loopTrangThai";
-            this.loopTrangThai.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
-            this.loopTrangThai.Size = new System.Drawing.Size(340, 20);
-            this.loopTrangThai.StyleController = this.layoutControl1;
-            this.loopTrangThai.TabIndex = 7;
             // 
             // layoutControlItem4
             // 
@@ -160,13 +177,6 @@
             this.layoutControlItem4.Text = "Trạng Thái";
             this.layoutControlItem4.TextSize = new System.Drawing.Size(76, 13);
             // 
-            // separatorControl1
-            // 
-            this.separatorControl1.Location = new System.Drawing.Point(2, 98);
-            this.separatorControl1.Name = "separatorControl1";
-            this.separatorControl1.Size = new System.Drawing.Size(333, 24);
-            this.separatorControl1.TabIndex = 8;
-            // 
             // layoutControlItem5
             // 
             this.layoutControlItem5.Control = this.separatorControl1;
@@ -175,16 +185,6 @@
             this.layoutControlItem5.Size = new System.Drawing.Size(337, 28);
             this.layoutControlItem5.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem5.TextVisible = false;
-            // 
-            // btnThem
-            // 
-            this.btnThem.Location = new System.Drawing.Point(339, 98);
-            this.btnThem.Name = "btnThem";
-            this.btnThem.Size = new System.Drawing.Size(91, 22);
-            this.btnThem.StyleController = this.layoutControl1;
-            this.btnThem.TabIndex = 9;
-            this.btnThem.Text = "Thêm";
-            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // layoutControlItem6
             // 
@@ -202,20 +202,20 @@
             this.ClientSize = new System.Drawing.Size(432, 124);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyKhachHang";
-            this.Text = "frmModifyKhachHang";
+            this.Text = "Modify Khách Hàng";
             this.Load += new System.EventHandler(this.frmModifyKhachHang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtKhachHang.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.loopTrangThai.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDienThoai.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtDiaChi.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtKhachHang.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             this.ResumeLayout(false);

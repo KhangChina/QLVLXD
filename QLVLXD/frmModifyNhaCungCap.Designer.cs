@@ -177,7 +177,7 @@
             this.ClientSize = new System.Drawing.Size(423, 104);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyNhaCungCap";
-            this.Text = "frmModifyNhaCungCap";
+            this.Text = "Modify Nhà Cung Cấp";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).EndInit();

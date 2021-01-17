@@ -154,6 +154,8 @@
             // 
             // grv
             // 
+            this.grv.Appearance.HeaderPanel.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grv.Appearance.HeaderPanel.Options.UseFont = true;
             this.grv.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
             this.gridColumn1,
             this.gridColumn2});
@@ -170,6 +172,7 @@
             // 
             // gridColumn2
             // 
+            this.gridColumn2.Caption = "Tên Đơn Vị";
             this.gridColumn2.FieldName = "TenDVT";
             this.gridColumn2.Name = "gridColumn2";
             this.gridColumn2.Visible = true;

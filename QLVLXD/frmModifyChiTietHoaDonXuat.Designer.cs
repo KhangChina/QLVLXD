@@ -38,6 +38,7 @@
             this.gridLookUpEdit1View = new DevExpress.XtraGrid.Views.Grid.GridView();
             this.colID = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colIDHH = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.colSoLuong = new DevExpress.XtraGrid.Columns.GridColumn();
             this.Root = new DevExpress.XtraLayout.LayoutControlGroup();
             this.layoutControlItem1 = new DevExpress.XtraLayout.LayoutControlItem();
@@ -46,7 +47,6 @@
             this.layoutControlItem4 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem5 = new DevExpress.XtraLayout.LayoutControlItem();
             this.layoutControlItem6 = new DevExpress.XtraLayout.LayoutControlItem();
-            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.separatorControl1)).BeginInit();
@@ -173,6 +173,14 @@
             this.colIDHH.Visible = true;
             this.colIDHH.VisibleIndex = 1;
             // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Tên Vật Liệu";
+            this.gridColumn1.FieldName = "TenHH";
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 3;
+            // 
             // colSoLuong
             // 
             this.colSoLuong.Caption = "Số Lượng Tồn";
@@ -251,14 +259,6 @@
             this.layoutControlItem6.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem6.TextVisible = false;
             // 
-            // gridColumn1
-            // 
-            this.gridColumn1.Caption = "Tên Vật Liệu";
-            this.gridColumn1.FieldName = "TenHH";
-            this.gridColumn1.Name = "gridColumn1";
-            this.gridColumn1.Visible = true;
-            this.gridColumn1.VisibleIndex = 3;
-            // 
             // frmModifyChiTietHoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -266,7 +266,7 @@
             this.ClientSize = new System.Drawing.Size(513, 100);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyChiTietHoaDonXuat";
-            this.Text = "frmModifyChiTietHoaDonXuat";
+            this.Text = "Modify  Chi Tiết Hoá Đơn Xuất";
             this.Load += new System.EventHandler(this.frmModifyChiTietHoaDonXuat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

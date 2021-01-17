@@ -259,7 +259,7 @@
             this.FormBorderEffect = DevExpress.XtraEditors.FormBorderEffect.None;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmModifyKhoHangHoa";
-            this.Text = "fmrModifyKhoHangHoa";
+            this.Text = "Modify Kho Hàng Hóa";
             this.Load += new System.EventHandler(this.fmrModifyKhoHangHoa_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);

@@ -119,11 +119,11 @@
     <Compile Include="frmModifyHoaDonXuat.Designer.cs">
       <DependentUpon>frmModifyHoaDonXuat.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmModifyKhoHangHoa.cs">
+    <Compile Include="Modify Kho Hàng Hóa.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmModifyKhoHangHoa.Designer.cs">
-      <DependentUpon>frmModifyKhoHangHoa.cs</DependentUpon>
+    <Compile Include="Modify Kho Hàng Hóa.Designer.cs">
+      <DependentUpon>Modify Kho Hàng Hóa.cs</DependentUpon>
     </Compile>
     <Compile Include="frmChiTietPhieuDat.cs">
       <SubType>Form</SubType>
@@ -368,8 +368,8 @@
     <EmbeddedResource Include="frmModifyHoaDonXuat.resx">
       <DependentUpon>frmModifyHoaDonXuat.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmModifyKhoHangHoa.resx">
-      <DependentUpon>frmModifyKhoHangHoa.cs</DependentUpon>
+    <EmbeddedResource Include="Modify Kho Hàng Hóa.resx">
+      <DependentUpon>Modify Kho Hàng Hóa.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmChiTietPhieuDat.resx">
       <DependentUpon>frmChiTietPhieuDat.cs</DependentUpon>

@@ -39,12 +39,12 @@
             this.acBanVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acXuatVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.acKho = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.acLoaiVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acDonViTinh = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acGiamGia = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acNhaCungCap = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acLoaiVatLieu = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.acKho = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acSystem = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acPhanQuyen = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -53,8 +53,8 @@
             this.acBanChay = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acTonKho = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.acSetting = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.fluentDesignFormControl1 = new DevExpress.XtraBars.FluentDesignSystem.FluentDesignFormControl();
             this.txtNhanVienSession = new DevExpress.XtraBars.BarStaticItem();
             this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
@@ -100,6 +100,7 @@
             // 
             // acDsHoaDon
             // 
+            this.acDsHoaDon.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acDsHoaDon.ImageOptions.Image")));
             this.acDsHoaDon.Name = "acDsHoaDon";
             this.acDsHoaDon.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acDsHoaDon.Text = "Danh Sách Hóa Đơn";
@@ -108,6 +109,7 @@
             // 
             // acDatHangNhap
             // 
+            this.acDatHangNhap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acDatHangNhap.ImageOptions.Image")));
             this.acDatHangNhap.Name = "acDatHangNhap";
             this.acDatHangNhap.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acDatHangNhap.Text = "Đặt Vật Liệu";
@@ -115,6 +117,7 @@
             // 
             // acNhapVatLieu
             // 
+            this.acNhapVatLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acNhapVatLieu.ImageOptions.Image")));
             this.acNhapVatLieu.Name = "acNhapVatLieu";
             this.acNhapVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acNhapVatLieu.Text = "Nhập Vật Liệu";
@@ -131,6 +134,7 @@
             // 
             // acBanVatLieu
             // 
+            this.acBanVatLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acBanVatLieu.ImageOptions.Image")));
             this.acBanVatLieu.Name = "acBanVatLieu";
             this.acBanVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acBanVatLieu.Text = "Bán Vật Liệu";
@@ -138,6 +142,7 @@
             // 
             // acXuatVatLieu
             // 
+            this.acXuatVatLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acXuatVatLieu.ImageOptions.Image")));
             this.acXuatVatLieu.Name = "acXuatVatLieu";
             this.acXuatVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acXuatVatLieu.Text = "Xuất Vật Liệu";
@@ -146,34 +151,26 @@
             // accordionControlElement5
             // 
             this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.acKho,
-            this.acLoaiVatLieu,
             this.acDonViTinh,
             this.acVatLieu,
             this.acGiamGia,
             this.acNhaCungCap,
+            this.acLoaiVatLieu,
+            this.acKho,
             this.acKhachHang,
             this.acSystem});
             this.accordionControlElement5.Expanded = true;
+            this.accordionControlElement5.HeaderTemplate.AddRange(new DevExpress.XtraBars.Navigation.HeaderElementInfo[] {
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Text),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.Image),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.HeaderControl),
+            new DevExpress.XtraBars.Navigation.HeaderElementInfo(DevExpress.XtraBars.Navigation.HeaderElementType.ContextButtons)});
             this.accordionControlElement5.Name = "accordionControlElement5";
             this.accordionControlElement5.Text = "Danh Mục";
             // 
-            // acKho
-            // 
-            this.acKho.Name = "acKho";
-            this.acKho.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.acKho.Text = "Kho";
-            this.acKho.Click += new System.EventHandler(this.acKho_Click);
-            // 
-            // acLoaiVatLieu
-            // 
-            this.acLoaiVatLieu.Name = "acLoaiVatLieu";
-            this.acLoaiVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.acLoaiVatLieu.Text = "Loại Vật Liệu";
-            this.acLoaiVatLieu.Click += new System.EventHandler(this.acLoaiVatLieu_Click);
-            // 
             // acDonViTinh
             // 
+            this.acDonViTinh.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acDonViTinh.ImageOptions.Image")));
             this.acDonViTinh.Name = "acDonViTinh";
             this.acDonViTinh.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acDonViTinh.Text = "Đơn Vị Tính";
@@ -181,6 +178,7 @@
             // 
             // acVatLieu
             // 
+            this.acVatLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acVatLieu.ImageOptions.Image")));
             this.acVatLieu.Name = "acVatLieu";
             this.acVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acVatLieu.Text = "Vật Liệu";
@@ -188,6 +186,7 @@
             // 
             // acGiamGia
             // 
+            this.acGiamGia.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acGiamGia.ImageOptions.Image")));
             this.acGiamGia.Name = "acGiamGia";
             this.acGiamGia.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acGiamGia.Text = "Giảm giá";
@@ -195,13 +194,31 @@
             // 
             // acNhaCungCap
             // 
+            this.acNhaCungCap.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acNhaCungCap.ImageOptions.Image")));
             this.acNhaCungCap.Name = "acNhaCungCap";
             this.acNhaCungCap.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acNhaCungCap.Text = "Nhà cung cấp";
             this.acNhaCungCap.Click += new System.EventHandler(this.acNhaCungCap_Click);
             // 
+            // acLoaiVatLieu
+            // 
+            this.acLoaiVatLieu.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acLoaiVatLieu.ImageOptions.Image")));
+            this.acLoaiVatLieu.Name = "acLoaiVatLieu";
+            this.acLoaiVatLieu.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acLoaiVatLieu.Text = "Loại Vật Liệu";
+            this.acLoaiVatLieu.Click += new System.EventHandler(this.acLoaiVatLieu_Click);
+            // 
+            // acKho
+            // 
+            this.acKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acKho.ImageOptions.Image")));
+            this.acKho.Name = "acKho";
+            this.acKho.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.acKho.Text = "Kho";
+            this.acKho.Click += new System.EventHandler(this.acKho_Click);
+            // 
             // acKhachHang
             // 
+            this.acKhachHang.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acKhachHang.ImageOptions.Image")));
             this.acKhachHang.Name = "acKhachHang";
             this.acKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acKhachHang.Text = "Khách hàng";
@@ -212,12 +229,15 @@
             this.acSystem.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.acPhanQuyen,
             this.acNhanVien});
+            this.acSystem.Expanded = true;
+            this.acSystem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acSystem.ImageOptions.Image")));
             this.acSystem.Name = "acSystem";
             this.acSystem.Text = "Hệ thống";
             this.acSystem.Visible = false;
             // 
             // acPhanQuyen
             // 
+            this.acPhanQuyen.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acPhanQuyen.ImageOptions.Image")));
             this.acPhanQuyen.Name = "acPhanQuyen";
             this.acPhanQuyen.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acPhanQuyen.Text = "Phân Quyền";
@@ -225,6 +245,7 @@
             // 
             // acNhanVien
             // 
+            this.acNhanVien.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acNhanVien.ImageOptions.Image")));
             this.acNhanVien.Name = "acNhanVien";
             this.acNhanVien.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acNhanVien.Text = "Nhân Viên";
@@ -242,6 +263,7 @@
             // 
             // acBanChay
             // 
+            this.acBanChay.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acBanChay.ImageOptions.Image")));
             this.acBanChay.Name = "acBanChay";
             this.acBanChay.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acBanChay.Text = "Bán Chạy";
@@ -249,6 +271,7 @@
             // 
             // acTonKho
             // 
+            this.acTonKho.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("acTonKho.ImageOptions.Image")));
             this.acTonKho.Name = "acTonKho";
             this.acTonKho.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.acTonKho.Text = "Tồn Kho";
@@ -257,24 +280,25 @@
             // acSetting
             // 
             this.acSetting.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement16,
             this.accordionControlElement17});
             this.acSetting.Expanded = true;
             this.acSetting.Name = "acSetting";
             this.acSetting.Text = "Cài đặt";
             this.acSetting.Visible = false;
             // 
-            // accordionControlElement16
-            // 
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "Cơ sở dữ liệu";
-            // 
             // accordionControlElement17
             // 
+            this.accordionControlElement17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement17.ImageOptions.Image")));
             this.accordionControlElement17.Name = "accordionControlElement17";
             this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement17.Text = "Giao diện";
+            // 
+            // accordionControlElement16
+            // 
+            this.accordionControlElement16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("accordionControlElement16.ImageOptions.Image")));
+            this.accordionControlElement16.Name = "accordionControlElement16";
+            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement16.Text = "Cơ sở dữ liệu";
             // 
             // fluentDesignFormControl1
             // 

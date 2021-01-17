@@ -33,6 +33,7 @@
             this.documentViewer1 = new DevExpress.XtraPrinting.Preview.DocumentViewer();
             this.documentViewerBarManager1 = new DevExpress.XtraPrinting.Preview.DocumentViewerBarManager(this.components);
             this.previewBar1 = new DevExpress.XtraPrinting.Preview.PreviewBar();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.txtSoLan = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.btnGetData = new DevExpress.XtraBars.BarButtonItem();
@@ -104,7 +105,6 @@
             this.printPreviewBarCheckItem17 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.printPreviewBarCheckItem18 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.printPreviewBarCheckItem19 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
-            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.documentViewerBarManager1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.printPreviewRepositoryItemComboBox1)).BeginInit();
@@ -247,6 +247,12 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiSendFile),
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiClosePreview, true)});
             this.previewBar1.Text = "Toolbar";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "Nhập số lần";
+            this.barStaticItem1.Id = 61;
+            this.barStaticItem1.Name = "barStaticItem1";
             // 
             // txtSoLan
             // 
@@ -936,12 +942,6 @@
             this.printPreviewBarCheckItem19.Id = 58;
             this.printPreviewBarCheckItem19.Name = "printPreviewBarCheckItem19";
             // 
-            // barStaticItem1
-            // 
-            this.barStaticItem1.Caption = "Nhập số lần";
-            this.barStaticItem1.Id = 61;
-            this.barStaticItem1.Name = "barStaticItem1";
-            // 
             // frmReportXuatHoaDonXuat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -953,7 +953,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmReportXuatHoaDonXuat";
-            this.Text = "frmReportXuatHoaDonXuat";
+            this.Text = "Report Xuất Hóa Đơn Xuất";
             ((System.ComponentModel.ISupportInitialize)(this.documentViewerBarManager1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.repositoryItemSpinEdit1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.printPreviewRepositoryItemComboBox1)).EndInit();

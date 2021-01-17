@@ -36,6 +36,7 @@
             this.layoutControlItem2 = new DevExpress.XtraLayout.LayoutControlItem();
             this.documentViewerBarManager1 = new DevExpress.XtraPrinting.Preview.DocumentViewerBarManager(this.components);
             this.previewBar1 = new DevExpress.XtraPrinting.Preview.PreviewBar();
+            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             this.txtSoLan = new DevExpress.XtraBars.BarEditItem();
             this.repositoryItemSpinEdit1 = new DevExpress.XtraEditors.Repository.RepositoryItemSpinEdit();
             this.btnGetData = new DevExpress.XtraBars.BarButtonItem();
@@ -107,7 +108,6 @@
             this.printPreviewBarCheckItem17 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.printPreviewBarCheckItem18 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
             this.printPreviewBarCheckItem19 = new DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem();
-            this.barStaticItem1 = new DevExpress.XtraBars.BarStaticItem();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).BeginInit();
             this.layoutControl1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Root)).BeginInit();
@@ -284,6 +284,12 @@
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiSendFile),
             new DevExpress.XtraBars.LinkPersistInfo(this.bbiClosePreview, true)});
             this.previewBar1.Text = "Toolbar";
+            // 
+            // barStaticItem1
+            // 
+            this.barStaticItem1.Caption = "Nhập Số Lần";
+            this.barStaticItem1.Id = 61;
+            this.barStaticItem1.Name = "barStaticItem1";
             // 
             // txtSoLan
             // 
@@ -973,12 +979,6 @@
             this.printPreviewBarCheckItem19.Id = 58;
             this.printPreviewBarCheckItem19.Name = "printPreviewBarCheckItem19";
             // 
-            // barStaticItem1
-            // 
-            this.barStaticItem1.Caption = "Nhập Số Lần";
-            this.barStaticItem1.Id = 61;
-            this.barStaticItem1.Name = "barStaticItem1";
-            // 
             // frmReportXuatHoaDonNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -990,7 +990,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmReportXuatHoaDonNhap";
-            this.Text = "frmReportXuatHoaDonNhap";
+            this.Text = "Report Xuất Hóa Đơn Nhập";
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Root)).EndInit();

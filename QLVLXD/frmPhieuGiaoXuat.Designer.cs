@@ -428,7 +428,7 @@
             this.Controls.Add(this.barDockControlBottom);
             this.Controls.Add(this.barDockControlTop);
             this.Name = "frmPhieuGiaoXuat";
-            this.Text = "frmPhieuGiaoXuat";
+            this.Text = "Phiếu Giao Xuất";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPhieuGiaoXuat_FormClosing);
             this.Load += new System.EventHandler(this.frmPhieuGiaoXuat_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();

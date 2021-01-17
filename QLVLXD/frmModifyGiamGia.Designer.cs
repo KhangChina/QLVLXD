@@ -164,7 +164,7 @@
             this.ClientSize = new System.Drawing.Size(566, 52);
             this.Controls.Add(this.layoutControl1);
             this.Name = "frmModifyGiamGia";
-            this.Text = "frmModifyGiamGia";
+            this.Text = "Modify Giảm  Giá";
             this.Load += new System.EventHandler(this.frmModifyGiamGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.layoutControl1)).EndInit();
             this.layoutControl1.ResumeLayout(false);
